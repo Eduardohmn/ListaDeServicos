@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prestador – Guia Parque Andreense</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/provider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="/" style="color:#fff;text-decoration:none">← Voltar</a>
+  </div>
+</header>
+<main class="wrap" id="content">
+  <p class="muted">Carregando…</p>
+</main>
+<footer>
+  <div class="wrap">© <span id="year"></span> Guia Parque Andreense</div>
+</footer>
+<script>
+(function(){
+  const $ = (s) => document.querySelector(s);
+  const params = new URLSearchParams(location.search);
+  const id = params.get('id');
+  const content = $("#content");
+
+  async function load(){
+    try {
+      const res = await fetch('data/prestadores.json');
+      const list = await res.json();
+      const p = list.find(x => x.id === id && x.ativo);
+
+      if (!p) {
+        content.innerHTML = '<p class="muted">Prestador não encontrado ou inativo.</p>';
+        return;
+      }
+      
+      const tel = (p.whatsapp || '').replace(/\D/g, '');
+      const wa = tel ? `https://wa.me/${tel}?text=Ol%C3%A1%2C+vi+seu+perfil+no+Guia+Parque+Andreense+e+gostaria+de+um+or%C3%A7amento.` : "#";
+      
+      const servicesHtml = p.servicos ? `
+        <section>
+          <h3>Serviços Oferecidos</h3>
+          <ul>${p.servicos.map(s => `<li>${s}</li>`).join('')}</ul>
+        </section>
+      ` : '';
+      
+      const photosHtml = p.fotos && p.fotos.length > 0 ? `
+        <section>
+          <h3>Galeria</h3>
+          <div class="gallery">
+            ${p.fotos.map(foto => `<img src="${foto}" alt="Foto de serviço de ${p.nome}">`).join('')}
+          </div>
+        </section>
+      ` : '';
+
+      content.innerHTML = `
+        <article class="card profile-card">
+          ${p.destaque ? '<span class="badge">Destaque</span>' : ''}
+          <div class="profile-header">
+            <h1>${p.nome}</h1>
+            <div class="muted">${p.categoria || ''} · ${p.bairro || ''}</div>
+          </div>
+          <p class="profile-description">${p.descricao || 'Nenhuma descrição fornecida.'}</p>
+          
+          <div class="contact-info">
+            <a class="cta" href="${wa}" target="_blank" rel="nofollow noopener">
+              <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+            </a>
+            ${p.instagram ? `<a class="cta secondary-cta" href="https://instagram.com/${p.instagram}" target="_blank" rel="nofollow noopener">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>` : ''}
+          </div>
+
+          <hr>
+
+          ${servicesHtml}
+
+          <section>
+            <h3>Informações Adicionais</h3>
+            <ul>
+              <li><strong>Preço base:</strong> ${p.preco_base || '—'}</li>
+              <li><strong>Horário:</strong> ${p.horario || '—'}</li>
+            </ul>
+          </section>
+
+          ${photosHtml}
+
+        </article>
+      `;
+    } catch (error) {
+      console.error('Erro ao carregar dados:', error);
+      content.innerHTML = '<p class="muted">Ocorreu um erro ao carregar o perfil. Tente novamente mais tarde.</p>';
+    }
+  }
+
+  load();
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
