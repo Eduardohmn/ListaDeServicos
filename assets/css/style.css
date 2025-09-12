@@ -1,51 +1,32 @@
-:root {
-    --primary-color: #007BFF;
-    --secondary-color: #6c757d;
-    --bg-color: #f8f9fa;
-    --card-bg: #ffffff;
-    --text-color: #333;
-    --accent-color: #28a745;
-}
+/* --- ARQUIVO: style.css --- */
+/* Estilos que se aplicam APENAS à página principal (index.html) */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    padding: 20px;
-}
+/* --- Base (Mobile-First) --- */
 
 .header {
-    text-align: center;
-    padding: 40px 20px;
+    padding: 20px 15px;
+    margin-bottom: 15px;
     background-color: var(--card-bg);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    text-align: center;
 }
 
 .header h1 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: var(--primary-color);
     margin-bottom: 10px;
 }
 
 .header p {
-    font-size: 1.2em;
+    font-size: 0.9em;
     color: var(--secondary-color);
 }
 
 .search-container {
     position: relative;
-    width: 80%;
-    max-width: 600px;
-    margin: 20px auto 0;
+    width: 100%;
+    margin: 10px auto 0;
 }
 
 .search-container input {
@@ -53,7 +34,7 @@ body {
     padding: 12px 40px 12px 20px;
     border: 1px solid #ccc;
     border-radius: 25px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .search-icon {
@@ -67,13 +48,14 @@ body {
 .main {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 5px;
 }
 
 .categories-section,
 .providers-section,
 .register-section {
     background-color: var(--card-bg);
-    padding: 30px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -85,13 +67,13 @@ body {
     text-align: center;
     margin-bottom: 20px;
     color: var(--primary-color);
+    font-size: 1.3em;
 }
 
 .categories-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
 }
 
 .category-item {
@@ -102,27 +84,26 @@ body {
     text-decoration: none;
     color: var(--text-color);
     background-color: #f1f1f1;
-    padding: 15px 20px;
+    padding: 10px 8px;
     border-radius: 8px;
-    transition: transform 0.2s, background-color 0.2s;
-    flex: 1 1 120px;
-}
-
-.category-item:hover {
-    transform: translateY(-5px);
-    background-color: var(--primary-color);
-    color: #fff;
+    transition: background-color 0.2s; /* Remove a transição de transform para mobile */
 }
 
 .category-item i {
-    font-size: 1.8em;
-    margin-bottom: 8px;
+    font-size: 1.2em;
+    margin-bottom: 3px;
+}
+
+.category-item.selected {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
 }
 
 .providers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 15px;
 }
 
 .provider-card {
@@ -130,13 +111,9 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.2s;
     padding: 20px;
     border-top: 5px solid var(--primary-color);
-}
-
-.provider-card:hover {
-    transform: translateY(-5px);
+    transition: transform 0.2s;
 }
 
 .provider-card.destaque {
@@ -145,60 +122,50 @@ body {
 }
 
 .provider-card h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 5px;
 }
 
 .provider-card p {
     color: var(--secondary-color);
     margin-bottom: 10px;
+    font-size: 0.8em;
 }
 
 .provider-card .services-list li {
     list-style: none;
     color: var(--text-color);
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .provider-card .contact-links {
     margin-top: 15px;
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+    flex-direction: column; /* Botões em coluna no mobile */
+    gap: 8px;
 }
 
 .provider-card .contact-links a {
     text-decoration: none;
     color: #fff;
-    padding: 8px 15px;
+    padding: 10px;
     border-radius: 20px;
     font-weight: bold;
     transition: background-color 0.2s;
+    text-align: center;
 }
 
 .provider-card .contact-links .btn-whatsapp {
     background-color: var(--accent-color);
 }
 
-.provider-card .contact-links .btn-whatsapp:hover {
-    background-color: #218838;
-}
-
 .provider-card .contact-links .btn-profile {
     background-color: var(--primary-color);
 }
 
-.provider-card .contact-links .btn-profile:hover {
-    background-color: #0056b3;
-}
-
-.register-section {
-    text-align: center;
-}
-
 .register-section p {
     margin-bottom: 15px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .btn-whatsapp {
@@ -212,129 +179,109 @@ body {
     display: inline-block;
 }
 
-.btn-whatsapp:hover {
-    background-color: #218838;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    color: var(--secondary-color);
-}
-
-.category-item.selected {
-    background-color: var(--primary-color);
-    color: #fff;
-    font-weight: bold;
-}
-
-/* --- CSS OTIMIZADO PARA CELULAR --- */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
+/* --- Estilos para telas maiores (Desktop) --- */
+@media (min-width: 769px) {
     .header {
-        padding: 20px 15px;
-        margin-bottom: 15px;
+        padding: 40px 20px;
+        margin-bottom: 20px;
     }
 
     .header h1 {
-        font-size: 1.8em;
+        font-size: 2.5em;
     }
 
     .header p {
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
 
     .search-container {
-        width: 100%;
-        margin-top: 10px;
+        width: 80%;
+        max-width: 600px;
+        margin-top: 20px;
     }
 
     .search-container input {
-        font-size: 0.9em;
-    }
-
-    .main {
-        padding: 0 5px;
+        font-size: 1em;
     }
 
     .categories-section,
     .providers-section,
     .register-section {
-        padding: 15px;
-    }
-
-    .categories-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-
-    .category-item {
-        padding: 10px 8px;
-    }
-
-    .category-item i {
-        font-size: 1.2em;
-        margin-bottom: 3px;
-    }
-
-    .category-item:focus,
-    .category-item:active {
-        outline: none;
-        box-shadow: none;
-    }
-    /* Nenhum efeito de hover no mobile */
-
-    .providers-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .provider-card {
-        margin-bottom: 10px;
-    }
-
-    .provider-card h3 {
-        font-size: 1.2em;
-    }
-
-    .provider-card p {
-        font-size: 0.8em;
-    }
-
-    .provider-card .services-list li {
-        font-size: 0.8em;
-    }
-
-    .contact-links {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .contact-links a {
-        padding: 10px;
+        padding: 30px;
     }
 
     .register-section h2 {
-        font-size: 1.3em;
+        font-size: initial; /* Reseta para o padrão do h2 */
+    }
+
+    .categories-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .category-item {
+        flex: 1 1 120px;
+        padding: 15px 20px;
+        transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .category-item:hover {
+        transform: translateY(-5px);
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    .category-item i {
+        font-size: 1.8em;
+        margin-bottom: 8px;
+    }
+
+    .providers-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    
+    .provider-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .provider-card h3 {
+        font-size: 1.5em;
+    }
+
+    .provider-card p {
+        font-size: 1em; /* Tamanho normal */
+    }
+
+    .provider-card .services-list li {
+        font-size: 0.9em;
+    }
+    
+    .provider-card .contact-links {
+        flex-direction: row; /* Botões lado a lado no desktop */
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .provider-card .contact-links a {
+        padding: 8px 15px;
+    }
+
+    .provider-card .contact-links .btn-whatsapp:hover {
+        background-color: #218838;
+    }
+
+    .provider-card .contact-links .btn-profile:hover {
+        background-color: #0056b3;
     }
 
     .register-section p {
-        font-size: 1em;
+        font-size: 1.1em;
     }
-
-    .footer {
-        font-size: 0.8em;
-    }
-
-    .category-item.selected {
-        background-color: var(--primary-color);
-        color: #fff;
-        font-weight: bold;
+    
+    .btn-whatsapp:hover {
+        background-color: #218838;
     }
 }

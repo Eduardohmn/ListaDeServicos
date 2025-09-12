@@ -7,24 +7,26 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Variáveis de estado
     let allProviders = [];
-    let selectedCategory = null; // Ótimo para controlar o filtro ativo
+    let selectedCategory = null;
 
-    // Função assíncrona para carregar os dados do JSON.
-    // O uso de async/await é uma prática moderna e correta.
+    // Função para carregar os dados do JSON
     async function loadProviders() {
         try {
             const response = await fetch('data/prestadores.json');
             const data = await response.json();
             allProviders = data.filter(p => p.ativo); // Filtra apenas prestadores ativos
+            
+            // ALTERAÇÃO: Voltamos a exibir TODOS os prestadores ao iniciar.
             displayProviders(allProviders);
-        } catch (error) {
+
+        } catch (error)
+        {
             console.error('Erro ao carregar os dados dos prestadores:', error);
             providersGrid.innerHTML = '<p>Não foi possível carregar os prestadores no momento. Tente novamente mais tarde.</p>';
         }
     }
 
-    // Função para renderizar os cards na tela.
-    // A lógica para separar destaques dos regulares está perfeita.
+    // Função para renderizar os cards na tela
     function displayProviders(providers) {
         providersGrid.innerHTML = '';
         if (providers.length === 0) {
@@ -32,9 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const featuredProviders = providers.filter(p => p.destaque);
-        const regularProviders = providers.filter(p => !p.destaque);
-        const sortedProviders = [...featuredProviders, ...regularProviders];
+        // Ordena para que os destaques sempre apareçam primeiro na listagem
+        const sortedProviders = [...providers.filter(p => p.destaque), ...providers.filter(p => !p.destaque)];
 
         sortedProviders.forEach(provider => {
             const card = document.createElement('div');
@@ -43,8 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.classList.add('destaque');
             }
 
+            // ALTERAÇÃO: Lista de serviços COMPLETA, como no seu original.
             const servicesHtml = provider.servicos.map(s => `<li>${s}</li>`).join('');
 
+            // ALTERAÇÃO: Layout do card restaurado para a sua versão original.
             card.innerHTML = `
                 <h3>${provider.nome}</h3>
                 <p><strong>Categoria:</strong> ${provider.categoria}</p>
@@ -54,10 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${servicesHtml}
                 </ul>
                 <div class="contact-links">
-                    <a href="https://wa.me/${provider.whatsapp}" class="btn-whatsapp" target="_blank">
+                    <a href="https://wa.me/${(provider.whatsapp || '').replace(/\D/g, '')}" class="btn-whatsapp" target="_blank" rel="nofollow noopener">
                         <i class="fab fa-whatsapp"></i> Falar no WhatsApp
                     </a>
-                    <a href="provider.html?id=${provider.id}" class="btn-profile">
+                    
+                    <a href="provider.html?slug=${provider.slug}" class="btn-profile">
                         Ver Perfil
                     </a>
                 </div>
@@ -66,17 +70,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Lógica de busca em tempo real, que já está funcional.
+    // Lógica de busca em tempo real
     searchInput.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase();
-        // Se a busca for limpa, e um filtro estiver ativo, mantenha o filtro
-        if (query === '' && selectedCategory) {
-            const filteredProviders = allProviders.filter(provider => provider.categoria === selectedCategory);
+        const query = e.target.value.toLowerCase().trim();
+        let filteredProviders = allProviders;
+
+        // Se a busca for limpa, volta a exibir com base na categoria selecionada (ou todos)
+        if (query === '') {
+            if (selectedCategory) {
+                filteredProviders = allProviders.filter(provider => provider.categoria === selectedCategory);
+            }
             displayProviders(filteredProviders);
             return;
         }
         
-        const filteredProviders = allProviders.filter(provider => {
+        // Filtra com base na busca
+        filteredProviders = allProviders.filter(provider => {
             const nameMatch = provider.nome.toLowerCase().includes(query);
             const categoryMatch = provider.categoria.toLowerCase().includes(query);
             const servicesMatch = provider.servicos.some(s => s.toLowerCase().includes(query));
@@ -87,45 +96,32 @@ document.addEventListener('DOMContentLoaded', () => {
         displayProviders(filteredProviders);
     });
 
-    // --- LÓGICA DE FILTRO DE CATEGORIAS (IMPLEMENTAÇÃO CORRETA) ---
+    // Lógica de filtro de categorias
     categories.forEach(category => {
-        // O evento 'click' funciona bem em desktop e mobile nos navegadores modernos.
         category.addEventListener('click', (e) => {
             e.preventDefault();
             const clickedCategory = e.currentTarget.dataset.category;
 
-            // PONTO-CHAVE #1: Remove a classe 'selected' de TODOS os itens.
-            // Isso garante que, não importa o que aconteça, o estado visual é resetado a cada clique.
-                categories.forEach(item => {
-                    item.classList.remove('selected');
-                    item.classList.remove('active');
-                    item.classList.remove('destaque');
-                });
+            categories.forEach(item => item.classList.remove('selected'));
 
             if (selectedCategory === clickedCategory) {
-                // Cenário 1: Clicou na categoria que já estava ativa (desativar filtro).
-                selectedCategory = null; // Limpa a variável de estado.
+                // Desativa o filtro, voltando a mostrar TODOS os prestadores
+                selectedCategory = null;
                 providersTitle.textContent = "Profissionais em Destaque";
-                displayProviders(allProviders); // Mostra todos os prestadores.
-                    // Remove o foco do elemento para evitar efeito visual travado no mobile
-                    e.currentTarget.blur();
+                displayProviders(allProviders);
+                e.currentTarget.blur();
             } else {
-                // Cenário 2: Clicou em uma nova categoria.
-                selectedCategory = clickedCategory; // Atualiza o estado para a nova categoria.
-                e.currentTarget.classList.add('selected'); // PONTO-CHAVE #2: Adiciona a classe APENAS ao item clicado.
+                // Ativa um novo filtro de categoria
+                selectedCategory = clickedCategory;
+                e.currentTarget.classList.add('selected');
                 const filteredProviders = allProviders.filter(provider => provider.categoria === selectedCategory);
                 providersTitle.textContent = `Profissionais de ${selectedCategory}`;
                 displayProviders(filteredProviders);
             }
-
-            // Boa prática: Limpa o campo de busca ao usar um filtro de categoria.
             searchInput.value = '';
         });
     });
 
     // Inicia o carregamento dos dados
     loadProviders();
-
-        // Garante que nenhuma categoria fique com 'selected' ao carregar
-        categories.forEach(item => item.classList.remove('selected'));
 });

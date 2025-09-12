@@ -1,0 +1,20 @@
+Análise do manifest.json
+Este arquivo permite que seu site se comporte como um aplicativo de celular (PWA - Progressive Web App), podendo ser "instalado" na tela inicial do usuário.
+
+O Problema: A propriedade "icons": [] está vazia. Sem ícones, o navegador não saberá qual imagem usar quando o usuário adicionar seu site à tela inicial, e a funcionalidade PWA não será validada.
+
+A Solução: Você precisa criar imagens de ícone para o seu site (geralmente uma versão quadrada do seu logo) em diferentes tamanhos e referenciá-las no array icons.
+
+Ação Recomendada:
+
+1 Crie as imagens de ícone nos tamanhos indicados (pelo menos 192x192 e 512x512).
+
+2 Coloque-as em uma pasta, como assets/icons/.
+
+3 Atualize seu manifest.json com as informações dos ícones.
+
+Análise do sitemap.xml
+Este arquivo serve para listar todas as páginas importantes do seu site, ajudando o Google a encontrá-las e a entender a estrutura do seu conteúdo.
+
+Ação Recomendada: Você precisa atualizar seu sitemap.xml para incluir a URL de cada prestador ativo. Como seu site é estático, você pode ter que fazer isso manualmente ou usar uma ferramenta/script que leia seu prestadores.json e gere o sitemap para você.
+

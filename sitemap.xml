@@ -6,10 +6,24 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  
   <url>
-    <loc>https://servicosparqueandreese.netlify.app/provider.html</loc>
+    <loc>https://servicosparqueandreese.netlify.app/provider.html?slug=joao-eletricista</loc>
     <lastmod>2025-09-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
-</urlset>
+  <url>
+    <loc>https://servicosparqueandreese.netlify.app/provider.html?slug=maria-manicure</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://servicosparqueandreese.netlify.app/provider.html?slug=eduardo_assistenciaTecnica</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  </urlset>
+  Ação Recomendada: Você precisa atualizar seu sitemap.xml para incluir a URL de cada prestador ativo. Como seu site é estático, você pode ter que fazer isso manualmente ou usar uma ferramenta/script que leia seu prestadores.json e gere o sitemap para você.

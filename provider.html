@@ -1,54 +1,87 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Prestador – Guia Parque Andreense</title>
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  
+  <title id="pageTitle">Prestador – Guia Parque Andreense</title>
+  <meta name="description" id="pageDescription" content="Encontre os melhores prestadores de serviço no Parque Andreense.">
+  
+  <meta property="og:type" content="profile">
+  <meta property="og:title" id="ogTitle" content="Serviços Parque Andreense" />
+  <meta property="og:description" id="ogDescription" content="Encontre os melhores profissionais locais." />
+  <meta property="og:image" id="ogImage" content="URL_DA_SUA_IMAGEM_PADRAO.jpg" /> <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/provider.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-<header>
-  <div class="wrap">
-    <a href="/" style="color:#fff;text-decoration:none">← Voltar</a>
-  </div>
-</header>
-<main class="wrap" id="content">
-  <p class="muted">Carregando…</p>
-</main>
-<footer>
-  <div class="wrap">© <span id="year"></span> Guia Parque Andreense</div>
-</footer>
-<script>
-(function(){
-  const $ = (s) => document.querySelector(s);
-  const params = new URLSearchParams(location.search);
-  const id = params.get('id');
-  const content = $("#content");
+  <header>
+    <div class="wrap">
+      <a href="/" style="color:#fff;text-decoration:none">← Voltar</a>
+    </div>
+  </header>
+  <main class="wrap" id="content">
+    <p class="muted">Carregando…</p>
+  </main>
+  <footer>
+    <div class="wrap">© <span id="year"></span> Guia Parque Andreense</div>
+  </footer>
+  <script>
+    (function () {
+      const $ = (s) => document.querySelector(s);
+      const params = new URLSearchParams(location.search);
+      const slug = params.get('slug');
+      const content = $("#content");
 
-  async function load(){
-    try {
-      const res = await fetch('data/prestadores.json');
-      const list = await res.json();
-      const p = list.find(x => x.id === id && x.ativo);
+      async function load() {
+        try {
+          const res = await fetch('data/prestadores.json');
+          const list = await res.json();
+          const p = list.find(x => x.slug === slug && x.ativo);
 
-      if (!p) {
-        content.innerHTML = '<p class="muted">Prestador não encontrado ou inativo.</p>';
-        return;
-      }
-      
-      const tel = (p.whatsapp || '').replace(/\D/g, '');
-      const wa = tel ? `https://wa.me/${tel}?text=Ol%C3%A1%2C+vi+seu+perfil+no+Guia+Parque+Andreense+e+gostaria+de+um+or%C3%A7amento.` : "#";
-      
-      const servicesHtml = p.servicos ? `
+          if (!p) {
+            content.innerHTML = '<p class="muted">Prestador não encontrado ou inativo.</p>';
+            return;
+          }
+
+          // ================================================================= //
+          // ===== INÍCIO DAS MELHORIAS DE SEO E REDES SOCIAIS ================ //
+          // ================================================================= //
+
+          // 1. Atualiza o título da página
+          document.getElementById('pageTitle').textContent = `${p.nome} - ${p.categoria} em Parque Andreense`;
+
+          // 2. Atualiza a meta description
+          document.getElementById('pageDescription').setAttribute('content', `Veja o perfil de ${p.nome}, especialista em ${p.categoria}. Contato via WhatsApp e serviços oferecidos na região do Parque Andreense.`);
+
+          // 3. Atualiza as tags Open Graph para compartilhamento (WhatsApp, Facebook, etc.)
+          document.getElementById('ogTitle').setAttribute('content', `${p.nome} - ${p.categoria}`);
+          document.getElementById('ogDescription').setAttribute('content', p.descricao || `Perfil de ${p.nome} no Guia Parque Andreense.`);
+          
+          // Usa a primeira foto da galeria como imagem de compartilhamento, se existir
+          if (p.fotos && p.fotos.length > 0) {
+              document.getElementById('ogImage').setAttribute('content', p.fotos[0]);
+          }
+          
+          // ================================================================= //
+          // ===== FIM DAS MELHORIAS ========================================= //
+          // ================================================================= //
+
+          const tel = (p.whatsapp || '').replace(/\D/g, '');
+          const wa = tel ? `https://wa.me/${tel}?text=Ol%C3%A1%2C+vi+seu+perfil+no+Guia+Parque+Andreense+e+gostaria+de+um+or%C3%A7amento.` : "#";
+
+          const servicesHtml = p.servicos ? `
         <section>
           <h3>Serviços Oferecidos</h3>
           <ul>${p.servicos.map(s => `<li>${s}</li>`).join('')}</ul>
         </section>
       ` : '';
-      
-      const photosHtml = p.fotos && p.fotos.length > 0 ? `
+
+          const photosHtml = p.fotos && p.fotos.length > 0 ? `
         <section>
           <h3>Galeria</h3>
           <div class="gallery">
@@ -57,7 +90,7 @@
         </section>
       ` : '';
 
-      content.innerHTML = `
+          content.innerHTML = `
         <article class="card profile-card">
           ${p.destaque ? '<span class="badge">Destaque</span>' : ''}
           <div class="profile-header">
@@ -91,15 +124,16 @@
 
         </article>
       `;
-    } catch (error) {
-      console.error('Erro ao carregar dados:', error);
-      content.innerHTML = '<p class="muted">Ocorreu um erro ao carregar o perfil. Tente novamente mais tarde.</p>';
-    }
-  }
+        } catch (error) {
+          console.error('Erro ao carregar dados:', error);
+          content.innerHTML = '<p class="muted">Ocorreu um erro ao carregar o perfil. Tente novamente mais tarde.</p>';
+        }
+      }
 
-  load();
-  document.getElementById('year').textContent = new Date().getFullYear();
-})();
-</script>
+      load();
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
+
 </html>
