@@ -285,3 +285,79 @@
         background-color: #218838;
     }
 }
+
+/* --- INÍCIO: Estilos para Categorias Expansíveis --- */
+
+/* --- Base (Mobile-First) --- */
+
+/* O container que agrupa as categorias extras. Escondido por padrão. */
+.hidden-categories {
+    display: none;
+    width: 100%;
+    /* Mantém o mesmo layout de grid das categorias principais para consistência */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+/* Classe adicionada via JS para exibir o container */
+.hidden-categories.expanded {
+    display: grid;
+    margin-top: 15px; /* Adiciona um respiro quando expandido */
+}
+
+/* Estilo do botão "Ver Mais" */
+.btn-toggle {
+    display: flex; /* Usamos flex para alinhar o ícone e o texto */
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    
+    width: 100%;
+    max-width: 280px; /* Limita a largura em telas muito largas de celular */
+    margin: 20px auto 0; /* Centraliza o botão e adiciona espaço acima */
+    
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    
+    color: #fff;
+    background-color: var(--primary-color); /* Usa a cor primária definida em global.css */
+    border: none;
+    border-radius: 25px; /* Mesmo raio dos outros botões */
+    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+/* --- Estilos para telas maiores (Desktop) --- */
+@media (min-width: 769px) {
+
+    /* No desktop, as categorias usam flexbox, então ajustamos aqui também */
+    .hidden-categories {
+        display: none; /* Mantém escondido por padrão */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .hidden-categories.expanded {
+        display: flex; /* Muda para flex quando expandido, igual ao grid principal */
+    }
+    
+    /* Efeito de hover para o botão no desktop */
+    .btn-toggle:hover {
+        background-color: #0056b3; /* Cor mais escura, igual ao .btn-profile:hover */
+        transform: translateY(-3px);
+    }
+}
+
+/* --- FIM: Estilos para Categorias Expansíveis --- */
+
+
+/* --- INÍCIO: Classe utilitária para esconder elementos --- */
+.hidden {
+    display: none !important;
+}
+/* --- FIM: Classe utilitária para esconder elementos --- */

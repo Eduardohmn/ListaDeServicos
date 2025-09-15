@@ -4,7 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const categories = document.querySelectorAll('.category-item');
     const providersTitle = document.getElementById('providersTitle');
-    
+    const toggleCategoriesBtn = document.getElementById('toggleCategoriesBtn');
+    const moreCategories = document.getElementById('moreCategories');
+    const categoriesSection = document.querySelector('.categories-section'); // Seleciona a seção inteira das categorias
+
+    // --- LÓGICA PARA CATEGORIAS EXPANSÍVEIS ---
+    if (toggleCategoriesBtn) {
+        toggleCategoriesBtn.addEventListener('click', () => {
+            moreCategories.classList.toggle('expanded');
+            if (moreCategories.classList.contains('expanded')) {
+                toggleCategoriesBtn.innerHTML = '<i class="fa fa-minus"></i> Ver Menos';
+            } else {
+                toggleCategoriesBtn.innerHTML = '<i class="fa fa-plus"></i> Ver Mais Categorias';
+            }
+        });
+    }
+
     // Variáveis de estado
     let allProviders = [];
     let selectedCategory = null;
@@ -13,16 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadProviders() {
         try {
             const response = await fetch('data/prestadores.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
             const data = await response.json();
-            allProviders = data.filter(p => p.ativo); // Filtra apenas prestadores ativos
-            
-            // ALTERAÇÃO: Exibe apenas os prestadores em destaque ao iniciar.
+            allProviders = data.filter(p => p.ativo);
             const featuredProviders = allProviders.filter(p => p.destaque);
             providersTitle.textContent = "Profissionais em Destaque";
             displayProviders(featuredProviders);
-
-        } catch (error)
-        {
+        } catch (error) {
             console.error('Erro ao carregar os dados dos prestadores:', error);
             providersGrid.innerHTML = '<p>Não foi possível carregar os prestadores no momento. Tente novamente mais tarde.</p>';
         }
@@ -35,19 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
             providersGrid.innerHTML = '<p class="no-results">Nenhum prestador encontrado para esta busca.</p>';
             return;
         }
-
-        // Ordena para que os destaques sempre apareçam primeiro na listagem
         const sortedProviders = [...providers.filter(p => p.destaque), ...providers.filter(p => !p.destaque)];
-
         sortedProviders.forEach(provider => {
             const card = document.createElement('div');
             card.classList.add('provider-card');
             if (provider.destaque) {
                 card.classList.add('destaque');
             }
-
             const servicesHtml = provider.servicos.map(s => `<li>${s}</li>`).join('');
-
             card.innerHTML = `
                 <h3>${provider.nome}</h3>
                 <p><strong>Categoria:</strong> ${provider.categoria}</p>
@@ -60,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="https://wa.me/${(provider.whatsapp || '').replace(/\D/g, '')}" class="btn-whatsapp" target="_blank" rel="nofollow noopener">
                         <i class="fab fa-whatsapp"></i> Falar no WhatsApp
                     </a>
-                    
                     <a href="provider.html?slug=${provider.slug}" class="btn-profile">
                         Ver Perfil
                     </a>
@@ -74,14 +82,15 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
         
-        // Se a busca for limpa, volta a exibir com base na categoria selecionada ou os destaques
         if (query === '') {
+            // Se a busca for limpa, MOSTRA as categorias novamente
+            categoriesSection.classList.remove('hidden');
+
             let providersToShow;
             if (selectedCategory) {
                 providersToShow = allProviders.filter(provider => provider.categoria === selectedCategory);
                 providersTitle.textContent = `Profissionais de ${selectedCategory}`;
             } else {
-                // ALTERAÇÃO: Volta para os destaques se não houver categoria selecionada
                 providersToShow = allProviders.filter(p => p.destaque);
                 providersTitle.textContent = "Profissionais em Destaque";
             }
@@ -89,7 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         
-        // Filtra com base na busca em todos os prestadores
+        // Se o usuário está digitando, ESCONDE as categorias
+        categoriesSection.classList.add('hidden');
+
         const filteredProviders = allProviders.filter(provider => {
             const nameMatch = provider.nome.toLowerCase().includes(query);
             const categoryMatch = provider.categoria.toLowerCase().includes(query);
@@ -98,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         providersTitle.textContent = `Resultados da busca por "${e.target.value}"`;
-        // ALTERAÇÃO: Limpa a seleção de categoria ao fazer uma busca geral
         categories.forEach(item => item.classList.remove('selected'));
         selectedCategory = null;
         displayProviders(filteredProviders);
@@ -109,18 +119,14 @@ document.addEventListener('DOMContentLoaded', () => {
         category.addEventListener('click', (e) => {
             e.preventDefault();
             const clickedCategory = e.currentTarget.dataset.category;
-
             categories.forEach(item => item.classList.remove('selected'));
-
             if (selectedCategory === clickedCategory) {
-                // ALTERAÇÃO: Desativa o filtro, voltando a mostrar os destaques
                 selectedCategory = null;
                 providersTitle.textContent = "Profissionais em Destaque";
                 const featuredProviders = allProviders.filter(p => p.destaque);
                 displayProviders(featuredProviders);
                 e.currentTarget.blur();
             } else {
-                // Ativa um novo filtro de categoria
                 selectedCategory = clickedCategory;
                 e.currentTarget.classList.add('selected');
                 const filteredProviders = allProviders.filter(provider => provider.categoria === selectedCategory);
