@@ -16,8 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
             allProviders = data.filter(p => p.ativo); // Filtra apenas prestadores ativos
             
-            // ALTERAÇÃO: Voltamos a exibir TODOS os prestadores ao iniciar.
-            displayProviders(allProviders);
+            // ALTERAÇÃO: Exibe apenas os prestadores em destaque ao iniciar.
+            const featuredProviders = allProviders.filter(p => p.destaque);
+            providersTitle.textContent = "Profissionais em Destaque";
+            displayProviders(featuredProviders);
 
         } catch (error)
         {
@@ -44,10 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.classList.add('destaque');
             }
 
-            // ALTERAÇÃO: Lista de serviços COMPLETA, como no seu original.
             const servicesHtml = provider.servicos.map(s => `<li>${s}</li>`).join('');
 
-            // ALTERAÇÃO: Layout do card restaurado para a sua versão original.
             card.innerHTML = `
                 <h3>${provider.nome}</h3>
                 <p><strong>Categoria:</strong> ${provider.categoria}</p>
@@ -73,26 +73,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lógica de busca em tempo real
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
-        let filteredProviders = allProviders;
-
-        // Se a busca for limpa, volta a exibir com base na categoria selecionada (ou todos)
+        
+        // Se a busca for limpa, volta a exibir com base na categoria selecionada ou os destaques
         if (query === '') {
+            let providersToShow;
             if (selectedCategory) {
-                filteredProviders = allProviders.filter(provider => provider.categoria === selectedCategory);
+                providersToShow = allProviders.filter(provider => provider.categoria === selectedCategory);
+                providersTitle.textContent = `Profissionais de ${selectedCategory}`;
+            } else {
+                // ALTERAÇÃO: Volta para os destaques se não houver categoria selecionada
+                providersToShow = allProviders.filter(p => p.destaque);
+                providersTitle.textContent = "Profissionais em Destaque";
             }
-            displayProviders(filteredProviders);
+            displayProviders(providersToShow);
             return;
         }
         
-        // Filtra com base na busca
-        filteredProviders = allProviders.filter(provider => {
+        // Filtra com base na busca em todos os prestadores
+        const filteredProviders = allProviders.filter(provider => {
             const nameMatch = provider.nome.toLowerCase().includes(query);
             const categoryMatch = provider.categoria.toLowerCase().includes(query);
             const servicesMatch = provider.servicos.some(s => s.toLowerCase().includes(query));
             return nameMatch || categoryMatch || servicesMatch;
         });
 
-        providersTitle.textContent = query ? `Resultados da busca por "${e.target.value}"` : "Profissionais em Destaque";
+        providersTitle.textContent = `Resultados da busca por "${e.target.value}"`;
+        // ALTERAÇÃO: Limpa a seleção de categoria ao fazer uma busca geral
+        categories.forEach(item => item.classList.remove('selected'));
+        selectedCategory = null;
         displayProviders(filteredProviders);
     });
 
@@ -105,10 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
             categories.forEach(item => item.classList.remove('selected'));
 
             if (selectedCategory === clickedCategory) {
-                // Desativa o filtro, voltando a mostrar TODOS os prestadores
+                // ALTERAÇÃO: Desativa o filtro, voltando a mostrar os destaques
                 selectedCategory = null;
                 providersTitle.textContent = "Profissionais em Destaque";
-                displayProviders(allProviders);
+                const featuredProviders = allProviders.filter(p => p.destaque);
+                displayProviders(featuredProviders);
                 e.currentTarget.blur();
             } else {
                 // Ativa um novo filtro de categoria
