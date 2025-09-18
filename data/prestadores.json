@@ -12,7 +12,9 @@
       "Troca de fiação"
     ],
     "bairro": "Parque Andreense",
-    "preco_base": "A partir de R$ 80",
+    "preco_base": [
+      "A partir de R$ 80 "
+    ],
     "whatsapp": "5511999999999",
     "instagram": "joao_eletricista",
     "fotos": [
@@ -72,6 +74,7 @@
     "ativo": true,
     "destaque": true,
     "servicos": [
+      "Suporte do site",
       "Manutenção de computadores e notebooks",
       "Impressão A4",
       "Formatação"
@@ -80,8 +83,7 @@
     "preco_base": "A partir de R$ 40",
     "whatsapp": "5511980207627",
     "instagram": "",
-    "fotos": [
-    ],
-    "descricao": "Estudante de sistemas embarcados, faço os bicos de manutenção no meu tempo livre."
+    "fotos": [],
+    "descricao": "Estudante de sistemas embarcados, faço os bicos de manutenção no meu tempo livre. Criador do site, precisando de suporte me chame"
   }
 ]
