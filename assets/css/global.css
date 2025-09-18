@@ -1,6 +1,7 @@
 /* --- ARQUIVO: global.css --- */
 /* Estilos que se aplicam a TODAS as páginas do site */
 
+
 :root {
     --primary-color: #007BFF;
     --secondary-color: #6c757d;
@@ -8,7 +9,47 @@
     --card-bg: #ffffff;
     --text-color: #333;
     --accent-color: #28a745;
+    --border-color: #eee;
+    --item-bg: #f1f1f1;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base (Mobile-First) */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 10px;
+    font-size: 14px; /* Tamanho de fonte base para mobile */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em; /* Tamanho de fonte base para mobile */
+    color: var(--secondary-color);
+}
+
+
+/* Estilos para telas maiores (Desktop) */
+/* Adicionado para o tema escuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #0f172a;
+        --card-bg: #1e293b;
+        --text-color: #cbd5e1;
+        --secondary-color: #94a3b8;
+        --border-color: #334155;
+        --item-bg: #334155;
+    }
+}
+
 
 * {
     box-sizing: border-box;

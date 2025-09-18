@@ -30,11 +30,14 @@
 }
 
 .search-container input {
+/* Linha 34 alterada */
     width: 100%;
     padding: 12px 40px 12px 20px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color); /* Alterado de #ccc */
     border-radius: 25px;
     font-size: 0.9em;
+    background-color: var(--card-bg); /* Adicionado para consistência */
+    color: var(--text-color); /* Adicionado para consistência */
 }
 
 .search-icon {
@@ -77,16 +80,17 @@
 }
 
 .category-item {
+/* Linha 75 alterada */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     text-decoration: none;
     color: var(--text-color);
-    background-color: #f1f1f1;
+    background-color: var(--item-bg); /* Alterado de #f1f1f1 */
     padding: 10px 8px;
     border-radius: 8px;
-    transition: background-color 0.2s; /* Remove a transição de transform para mobile */
+    transition: background-color 0.2s;
 }
 
 .category-item i {
