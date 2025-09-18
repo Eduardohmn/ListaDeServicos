@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://servicosparqueandreese.netlify.app/sitemap.xml
+Sitemap: https://xn--serviosparqueandreense-36b.com.br/sitemap.xml
