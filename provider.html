@@ -5,13 +5,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   
+  <meta property="og:url" id="ogUrl" content="https://serviçosparqueandreense.com.br/">
+
   <title id="pageTitle">Prestador – Guia Parque Andreense</title>
   <meta name="description" id="pageDescription" content="Encontre os melhores prestadores de serviço no Parque Andreense.">
   
   <meta property="og:type" content="profile">
   <meta property="og:title" id="ogTitle" content="Serviços Parque Andreense" />
   <meta property="og:description" id="ogDescription" content="Encontre os melhores profissionais locais." />
-  <meta property="og:image" id="ogImage" content="URL_DA_SUA_IMAGEM_PADRAO.jpg" /> <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:image" id="ogImage" content="URL_DA_SUA_IMAGEM_PADRAO.jpg" /> 
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/provider.css">
@@ -30,6 +33,7 @@
   <footer>
     <div class="wrap">© <span id="year"></span> Guia Parque Andreense</div>
   </footer>
+  
   <script>
     (function () {
       const $ = (s) => document.querySelector(s);
@@ -48,29 +52,19 @@
             return;
           }
 
-          // ================================================================= //
-          // ===== INÍCIO DAS MELHORIAS DE SEO E REDES SOCIAIS ================ //
-          // ================================================================= //
-
-          // 1. Atualiza o título da página
+          // ATUALIZA AS METATAGS NO <HEAD>
           document.getElementById('pageTitle').textContent = `${p.nome} - ${p.categoria} em Parque Andreense`;
-
-          // 2. Atualiza a meta description
           document.getElementById('pageDescription').setAttribute('content', `Veja o perfil de ${p.nome}, especialista em ${p.categoria}. Contato via WhatsApp e serviços oferecidos na região do Parque Andreense.`);
-
-          // 3. Atualiza as tags Open Graph para compartilhamento (WhatsApp, Facebook, etc.)
           document.getElementById('ogTitle').setAttribute('content', `${p.nome} - ${p.categoria}`);
           document.getElementById('ogDescription').setAttribute('content', p.descricao || `Perfil de ${p.nome} no Guia Parque Andreense.`);
+          document.getElementById('ogUrl').setAttribute('content', `https://serviçosparqueandreense.com.br/provider.html?slug=${p.slug}`);
           
-          // Usa a primeira foto da galeria como imagem de compartilhamento, se existir
           if (p.fotos && p.fotos.length > 0) {
-              document.getElementById('ogImage').setAttribute('content', p.fotos[0]);
+              const imageUrl = new URL(p.fotos[0], window.location.href).href;
+              document.getElementById('ogImage').setAttribute('content', imageUrl);
           }
           
-          // ================================================================= //
-          // ===== FIM DAS MELHORIAS ========================================= //
-          // ================================================================= //
-
+          // CRIA O CONTEÚDO HTML DA PÁGINA
           const tel = (p.whatsapp || '').replace(/\D/g, '');
           const wa = tel ? `https://wa.me/${tel}?text=Ol%C3%A1%2C+vi+seu+perfil+no+Guia+Parque+Andreense+e+gostaria+de+um+or%C3%A7amento.` : "#";
 
