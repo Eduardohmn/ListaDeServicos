@@ -4,7 +4,7 @@
     "nome": "João Eletricista",
     "slug": "joao-eletricista",
     "categoria": "Eletricista",
-    "ativo": true,
+    "ativo": false,
     "destaque": true,
     "servicos": [
       "Instalação elétrica",
@@ -28,7 +28,7 @@
     "nome": "Maria Manicure",
     "slug": "maria-manicure",
     "categoria": "Manicure e Pedicure",
-    "ativo": true,
+    "ativo": false,
     "destaque": false,
     "servicos": [
       "Manicure",
@@ -68,8 +68,8 @@
   },
   {
     "id": "6",
-    "nome": "Eduardo Assistencia Tecnica/Impressão",
-    "slug": "Eduardo-assitencia-tecnica",
+    "nome": "Eduardo Henrique",
+    "slug": "eduardo-henrique",
     "categoria": "Informática",
     "ativo": true,
     "destaque": true,
@@ -77,7 +77,9 @@
       "Suporte do site",
       "Manutenção de computadores e notebooks",
       "Impressão A4",
-      "Formatação"
+      "Formatação",
+      "Limpeza",
+      "Troca de peças"
     ],
     "bairro": "Parque Andreense",
     "preco_base": "A partir de R$ 40",
@@ -85,5 +87,3424 @@
     "instagram": "",
     "fotos": [],
     "descricao": "Estudante de sistemas embarcados, faço os bicos de manutenção no meu tempo livre. Criador do site, precisando de suporte me chame"
+  },
+  {
+    "id": "7",
+    "nome": "DROGARIA ESTAÇÃO",
+    "slug": "drogaria-estacao",
+    "categoria": "Drogaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Medicamentos e demais produtos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511968413416",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Drogaria Estação oferece medicamentos e diversos outros produtos."
+  },
+  {
+    "id": "8",
+    "nome": "BRASIL GENÉRICOS",
+    "slug": "brasil-genericos",
+    "categoria": "Drogaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Medicamentos e demais produtos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511942388084",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Brasil Genéricos oferece medicamentos e diversos outros produtos."
+  },
+  {
+    "id": "9",
+    "nome": "DROGARIA CAÇULA",
+    "slug": "drogaria-cacula",
+    "categoria": "Drogaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Medicamentos e demais produtos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511975787144",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Drogaria Caçula oferece medicamentos e diversos outros produtos."
+  },
+  {
+    "id": "10",
+    "nome": "DROGARIA SANTIAGO",
+    "slug": "drogaria-santiago",
+    "categoria": "Drogaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Medicamentos e demais produtos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511971870969",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Drogaria Santiago oferece medicamentos e diversos outros produtos."
+  },
+  {
+    "id": "11",
+    "nome": "ESSENCIAL PHARMÁCIA",
+    "slug": "essencial-pharmacia",
+    "categoria": "Manipulação",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Medicamentos e vitaminas manipulados"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511944718865",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Essencial Pharmácia é especializada em medicamentos e vitaminas manipulados."
+  },
+  {
+    "id": "12",
+    "nome": "FARMACY FÓRMULAS",
+    "slug": "farmacy-formulas",
+    "categoria": "Manipulação",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Medicamentos e vitaminas manipulados"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511947712527",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Farmacy Fórmulas é especializada em medicamentos e vitaminas manipulados."
+  },
+  {
+    "id": "13",
+    "nome": "CANTINHO DA JU",
+    "slug": "cantinho-da-ju",
+    "categoria": "Banho e Tosa",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Banho e Tosa móvel"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511998053914",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Cantinho da Ju oferece serviços de Banho e Tosa móvel para pets."
+  },
+  {
+    "id": "14",
+    "nome": "ANA PAULA",
+    "slug": "ana-paula-veterinaria",
+    "categoria": "Veterinária",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Veterinária e Vacinas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511984256942",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Ana Paula oferece atendimento veterinário e aplicação de vacinas."
+  },
+  {
+    "id": "15",
+    "nome": "ALEXANDRE",
+    "slug": "alexandre-veterinario",
+    "categoria": "Veterinário",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Veterinário de Urgência"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511982883423",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Alexandre oferece atendimento veterinário de urgência."
+  },
+  {
+    "id": "16",
+    "nome": "MOZI VET AMANDA",
+    "slug": "mozi-vet-amanda",
+    "categoria": "Veterinária",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Veterinária e Vacinas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511942047030",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Mozi Vet Amanda oferece atendimento veterinário e aplicação de vacinas."
+  },
+  {
+    "id": "17",
+    "nome": "VICTOR LAZARETTI",
+    "slug": "victor-lazaretti-veterinario",
+    "categoria": "Veterinário",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Veterinário e cirurgião"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511989159090",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Victor Lazaretti é veterinário e cirurgião."
+  },
+  {
+    "id": "18",
+    "nome": "BICHO DO MATO",
+    "slug": "bicho-do-mato",
+    "categoria": "Pet Shop",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pet Shop",
+      "Veterinário",
+      "Produtos para pets",
+      "Entrega"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511976696767",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Bicho do Mato é um Pet Shop com veterinário e entrega de produtos."
+  },
+  {
+    "id": "19",
+    "nome": "DISK RAÇÃO",
+    "slug": "disk-racao",
+    "categoria": "Ração",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Ração e insumos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511992737518",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Disk Ração fornece ração e insumos para animais."
+  },
+  {
+    "id": "20",
+    "nome": "CASA DAS RAÇÕES",
+    "slug": "casa-das-racoes",
+    "categoria": "Ração",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Entrega de Rações e medicamentos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511952378125",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Casa das Rações faz entrega de rações e medicamentos."
+  },
+  {
+    "id": "21",
+    "nome": "FARMABICHOS",
+    "slug": "farmabichos",
+    "categoria": "Farmácia de Manipulação Pet",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Medicamentos manipulados para pets"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511978706039",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Farmabichos é uma farmácia de manipulação de medicamentos para animais."
+  },
+  {
+    "id": "22",
+    "nome": "SIMONE DEMARCHI",
+    "slug": "simone-demarchi-confeccoes-pet",
+    "categoria": "Confecções Pet",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Roupas sob medida para pets"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511981783869",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Simone Demarchi confecciona roupas sob medida para pets."
+  },
+  {
+    "id": "23",
+    "nome": "PETMOVEFELIZ",
+    "slug": "petmovefeliz",
+    "categoria": "Banho Móvel",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Banho a domicílio"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511975259916",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "PetMoveFeliz oferece serviço de banho para pets em casa."
+  },
+  {
+    "id": "24",
+    "nome": "MANICURE MILENA",
+    "slug": "manicure-milena",
+    "categoria": "Manicure e Pedicure",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviço de unhas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511969248920",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Milena oferece serviços de manicure e pedicure."
+  },
+  {
+    "id": "25",
+    "nome": "MANICURE ERIKA",
+    "slug": "manicure-erika",
+    "categoria": "Manicure e Pedicure",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviço de unhas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511991202765",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Erika oferece serviços de manicure e pedicure."
+  },
+  {
+    "id": "26",
+    "nome": "MANICURE CAROL",
+    "slug": "manicure-carol",
+    "categoria": "Manicure e Pedicure",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviço de unhas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511951148568",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Carol oferece serviços de manicure e pedicure."
+  },
+  {
+    "id": "27",
+    "nome": "MANICURE REJANE",
+    "slug": "manicure-rejane",
+    "categoria": "Manicure e Pedicure",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviço de unhas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511943127318",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Rejane oferece serviços de manicure e pedicure."
+  },
+  {
+    "id": "28",
+    "nome": "DANILO TATUADOR",
+    "slug": "danilo-tatuador",
+    "categoria": "Tatuagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Tatuagens masculinas e femininas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511983220451",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Danilo é tatuador e faz tatuagens masculinas e femininas."
+  },
+  {
+    "id": "29",
+    "nome": "VILALBA PRODUTOS",
+    "slug": "vilalba-produtos",
+    "categoria": "Beleza",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Natura e Boticário"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511957982094",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Vilalba vende produtos das marcas Natura e Boticário."
+  },
+  {
+    "id": "30",
+    "nome": "PRODUTOS DA ANA",
+    "slug": "produtos-da-ana",
+    "categoria": "Beleza",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Boticário",
+      "Avon",
+      "Prata"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511965272112",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Ana vende produtos Boticário, Avon e Prata."
+  },
+  {
+    "id": "31",
+    "nome": "NILCE PRODUTOS",
+    "slug": "nilce-produtos",
+    "categoria": "Beleza",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Avon e Demillus"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511974699019",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Nilce vende produtos Avon e Demillus."
+  },
+  {
+    "id": "32",
+    "nome": "ANDRÉ IMÓVEIS",
+    "slug": "andre-imoveis",
+    "categoria": "Corretor de Imóveis",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Venda de casas e lotes"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511971519745",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "André Imóveis trabalha com a venda de casas e lotes na região."
+  },
+  {
+    "id": "33",
+    "nome": "CURY HAHAD IMÓVEIS - ELZA",
+    "slug": "cury-hahad-imoveis-elza",
+    "categoria": "Corretor de Imóveis",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Venda de casas e lotes"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511953876421",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Elza da Cury Hahad Imóveis trabalha com a venda de casas e lotes."
+  },
+  {
+    "id": "34",
+    "nome": "ANDRÉ MARTINELLI",
+    "slug": "andre-martinelli-corretor",
+    "categoria": "Corretor de Imóveis",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Venda e aluguel de casas e lotes"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511985041013",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "André Martinelli é corretor de imóveis e trabalha com venda e aluguel."
+  },
+  {
+    "id": "35",
+    "nome": "EFRAIM IMÓVEIS/ROBERTA",
+    "slug": "efraim-imoveis-roberta",
+    "categoria": "Corretora de Imóveis",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Venda e permuta de casas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511947783166",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Roberta da Efraim Imóveis trabalha com vendas e permutas de casas."
+  },
+  {
+    "id": "36",
+    "nome": "ELISABETE NAVARRO",
+    "slug": "elisabete-navarro-naturologa",
+    "categoria": "Naturóloga",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Terapias",
+      "Florais",
+      "Massagens",
+      "Auriculoterapia"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511985453196",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Elisabete Navarro é naturóloga e oferece terapias, florais, massagens e auriculoterapia."
+  },
+  {
+    "id": "37",
+    "nome": "GUSTAVO MAQUI",
+    "slug": "gustavo-maqui-personal",
+    "categoria": "Personal Training",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Aulas e treinamentos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511959002727",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Gustavo Maqui é Personal Trainer e oferece aulas e treinamentos."
+  },
+  {
+    "id": "38",
+    "nome": "FERNANDA",
+    "slug": "fernanda-massagista",
+    "categoria": "Massagista",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Massagens e drenagens"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "551194659795",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Fernanda é massagista e realiza massagens e drenagens."
+  },
+  {
+    "id": "39",
+    "nome": "CARINA PRESTUPA",
+    "slug": "carina-prestupa-psicanalista",
+    "categoria": "Psicanalista",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Atendimento para adultos e crianças"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511972875652",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Carina Prestupa é psicanalista e atende adultos e crianças."
+  },
+  {
+    "id": "40",
+    "nome": "ANDREA MACHADO",
+    "slug": "andrea-machado-psicologa",
+    "categoria": "Psicóloga Clínica",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Atendimento para adolescentes, adultos e casais"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511991044831",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Andrea Machado é psicóloga clínica e atende adolescentes, adultos e casais."
+  },
+  {
+    "id": "41",
+    "nome": "KARINA",
+    "slug": "karina-atividade-fisica",
+    "categoria": "Atividade Física",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Aulas de pilates, ginástica e dança"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511991620949",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Karina oferece aulas de pilates, ginástica e dança."
+  },
+  {
+    "id": "42",
+    "nome": "EGON FELIX HADERMANN",
+    "slug": "egon-felix-hadermann-fisioterapeuta",
+    "categoria": "Fisioterapeuta",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Fisioterapia Ortopédica, RPG e Neurológica"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511991216768",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Egon Felix Hadermann é fisioterapeuta com especialização em Ortopedia, RPG e Neurologia."
+  },
+  {
+    "id": "43",
+    "nome": "MEIRE CANDIDA",
+    "slug": "meire-candida-podologa",
+    "categoria": "Podóloga",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Podologia",
+      "Design de Sobrancelhas",
+      "Micropigmentação"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511973735407",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Meire Candida oferece serviços de podologia, design de sobrancelhas e micropigmentação."
+  },
+  {
+    "id": "44",
+    "nome": "JARDINEIRO IVANILDO",
+    "slug": "jardineiro-ivanildo",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardinagem em geral",
+      "Corte de grama"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511975250882",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Ivanildo é jardineiro e realiza serviços de jardinagem em geral."
+  },
+  {
+    "id": "45",
+    "nome": "JARDINEIRO NILSON",
+    "slug": "jardineiro-nilson",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardinagem em geral",
+      "Corte de grama"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511981968203",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Nilson é jardineiro e realiza serviços de jardinagem em geral."
+  },
+  {
+    "id": "46",
+    "nome": "JARDINEIRO ITALO",
+    "slug": "jardineiro-italo",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardinagem em geral",
+      "Corte de grama"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511960212746",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Italo é jardineiro e realiza serviços de jardinagem em geral."
+  },
+  {
+    "id": "47",
+    "nome": "JARDINEIRO ALONSO",
+    "slug": "jardineiro-alonso",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardinagem em geral",
+      "Corte de grama"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511965728443",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Alonso é jardineiro e realiza serviços de jardinagem em geral."
+  },
+  {
+    "id": "48",
+    "nome": "JARDINEIRO MARCELO",
+    "slug": "jardineiro-marcelo",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardinagem em geral",
+      "Corte de grama",
+      "Corte de árvore"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511953876421",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Marcelo é jardineiro e realiza serviços de jardinagem, incluindo corte de árvores."
+  },
+  {
+    "id": "49",
+    "nome": "JARDINEIRO SR.TOMÁS",
+    "slug": "jardineiro-sr-tomas",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardim",
+      "Corte de grama"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511987314111",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Sr. Tomás é jardineiro e realiza serviços de jardinagem."
+  },
+  {
+    "id": "50",
+    "nome": "JARDINEIRO ROBERTO",
+    "slug": "jardineiro-roberto",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardinagem em geral",
+      "Corte de grama"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511992457709",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Roberto é jardineiro e realiza serviços de jardinagem em geral."
+  },
+  {
+    "id": "51",
+    "nome": "JARDINEIRO PEDRO",
+    "slug": "jardineiro-pedro",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardinagem em geral",
+      "Corte de grama"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511971766332",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Pedro é jardineiro e realiza serviços de jardinagem em geral."
+  },
+  {
+    "id": "52",
+    "nome": "JARDINEIRO MIRO",
+    "slug": "jardineiro-miro",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardinagem em geral",
+      "Corte de grama"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511999408086",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Miro é jardineiro e realiza serviços de jardinagem em geral."
+  },
+  {
+    "id": "53",
+    "nome": "JARDINEIRO CAIKIEH",
+    "slug": "jardineiro-caikieh",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardim",
+      "Corte de grama"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511982474738",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Caikieh é jardineiro e realiza serviços de jardinagem."
+  },
+  {
+    "id": "54",
+    "nome": "KR JARDINAGEM",
+    "slug": "kr-jardinagem",
+    "categoria": "Jardinagem",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Jardinagem em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511984966664",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "KR Jardinagem realiza serviços de jardinagem em geral."
+  },
+  {
+    "id": "55",
+    "nome": "IRENE BOLSAS",
+    "slug": "irene-bolsas",
+    "categoria": "Artesanato",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Bolsas e acessórios em couro"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511992538665",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Irene produz bolsas e acessórios artesanais em couro."
+  },
+  {
+    "id": "56",
+    "nome": "NINIART'S CARTONAGEM",
+    "slug": "niniarts-cartonagem",
+    "categoria": "Artesanato",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Caixas e presentes em cartonagem"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511996467894",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Niniart's Cartonagem (Alessandra) cria caixas e presentes em cartonagem."
+  },
+  {
+    "id": "57",
+    "nome": "VÂNIA CROCHÊ",
+    "slug": "vania-croche",
+    "categoria": "Artesanato",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Tapetes",
+      "Souplast",
+      "Cachecóis"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511982448972",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Vânia faz peças em crochê como tapetes, souplast e cachecóis."
+  },
+  {
+    "id": "58",
+    "nome": "MARIA CROCHÊ",
+    "slug": "maria-croche",
+    "categoria": "Artesanato",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Tapetes",
+      "Caminhos e peças em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511948081101",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Maria faz peças em crochê como tapetes e caminhos de mesa."
+  },
+  {
+    "id": "59",
+    "nome": "DARLENE CROCHÊ",
+    "slug": "darlene-croche",
+    "categoria": "Artesanato",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Peças em crochê em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511969687906",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Darlene faz peças em crochê em geral."
+  },
+  {
+    "id": "60",
+    "nome": "YARA CONFECÇÕES",
+    "slug": "yara-confeccoes",
+    "categoria": "Confecção",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pijamas",
+      "Máscaras",
+      "Terços",
+      "Laços",
+      "Acessórios"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511970439166",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Yara Confecciona diversos produtos como pijamas, máscaras e acessórios."
+  },
+  {
+    "id": "61",
+    "nome": "DIANA VELAS",
+    "slug": "diana-velas",
+    "categoria": "Velas Artesanais",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Velas Artesanais temáticas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511999006725",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Diana Velas produz velas artesanais e temáticas."
+  },
+  {
+    "id": "62",
+    "nome": "ACASADALIA - HOME STYLE",
+    "slug": "acasadalia-home-style",
+    "categoria": "Produtos Artesanais",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Velas",
+      "Spray",
+      "Águas de lençóis",
+      "Difusor"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511962200975",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Acasadalia Home Style produz velas, sprays, águas de lençóis e difusores."
+  },
+  {
+    "id": "63",
+    "nome": "LUCY QUADROS",
+    "slug": "lucy-quadros",
+    "categoria": "Artesanato",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Quadros em quebra-cabeça sob encomenda"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511999549599",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Lucy faz quadros de quebra-cabeça sob encomenda."
+  },
+  {
+    "id": "64",
+    "nome": "SIMONE LITZLER",
+    "slug": "simone-litzler-produtos-de-beleza",
+    "categoria": "Cosméticos Artesanais",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Sabonetes",
+      "Sais e cosméticos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511994608989",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Simone Litzler produz sabonetes, sais e cosméticos artesanais."
+  },
+  {
+    "id": "65",
+    "nome": "EDNA COSTURAS",
+    "slug": "edna-costuras",
+    "categoria": "Costura",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Confecções e consertos de roupas em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511988134312",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Edna realiza confecções e consertos de roupas em geral."
+  },
+  {
+    "id": "66",
+    "nome": "MORADA ECOLÓGICA",
+    "slug": "morada-ecologica",
+    "categoria": "Produtos Ecológicos",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Bolsas",
+      "Echarpes",
+      "Acessórios artesanais"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511949524413",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Morada Ecológica oferece bolsas, echarpes e acessórios artesanais e ecológicos."
+  },
+  {
+    "id": "67",
+    "nome": "GIGI CROCHÊ",
+    "slug": "gigi-croche",
+    "categoria": "Artesanato",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Gorro",
+      "Cachecol",
+      "Tapete",
+      "Pantufa",
+      "Cestos de lã e fio de malha"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511973222304",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Gigi Crochê produz peças em lã e fio de malha como gorros, tapetes e cestos."
+  },
+  {
+    "id": "68",
+    "nome": "SINESIO-BEBIDAS",
+    "slug": "sinesio-bebidas",
+    "categoria": "Bebidas Artesanais",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Vinhos",
+      "Cachaças",
+      "Licores"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511999378048",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Sinésio vende vinhos, cachaças e licores artesanais."
+  },
+  {
+    "id": "69",
+    "nome": "VANDA MARMITEX",
+    "slug": "vanda-marmitex",
+    "categoria": "Comida Caseira",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Marmitas e Lanches"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511959197879",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Vanda Marmitex prepara marmitas e lanches caseiros."
+  },
+  {
+    "id": "70",
+    "nome": "BAR DA BICA",
+    "slug": "bar-da-bica",
+    "categoria": "Comida Caseira",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Marmita e refeições no local"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511942945579",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Bar da Bica oferece marmitas e refeições no local."
+  },
+  {
+    "id": "71",
+    "nome": "REI DE OUROS",
+    "slug": "rei-de-ouros",
+    "categoria": "Comida Caseira",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Marmita e refeições no local"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511994463459",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Rei de Ouros oferece marmitas e refeições no local."
+  },
+  {
+    "id": "72",
+    "nome": "MARMITARIA DO GAÚCHO",
+    "slug": "marmitaria-do-gaucho",
+    "categoria": "Comida Caseira",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Marmita e refeições no local"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511913475405",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Marmitaria do Gaúcho oferece marmitas e refeições no local."
+  },
+  {
+    "id": "73",
+    "nome": "PRAIANO",
+    "slug": "praiano-restaurante",
+    "categoria": "Comida",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Marmita e refeições no local"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511930475126",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Praiano oferece marmitas e refeições no local."
+  },
+  {
+    "id": "74",
+    "nome": "FRUTOS DE GOIÁS",
+    "slug": "frutos-de-goias",
+    "categoria": "Comida",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Marmita e pratos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511973363954",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Frutos de Goiás oferece marmitas e pratos diversos."
+  },
+  {
+    "id": "75",
+    "nome": "PIZZARIA FENIX",
+    "slug": "pizzaria-fenix",
+    "categoria": "Pizzaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pizzas e esfihas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511973083043",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Pizzaria Fenix oferece pizzas e esfihas."
+  },
+  {
+    "id": "76",
+    "nome": "PIZZARIA CITTADINI",
+    "slug": "pizzaria-cittadini",
+    "categoria": "Pizzaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pizzas e lanches"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511952345275",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Pizzaria Cittadini oferece pizzas e lanches."
+  },
+  {
+    "id": "77",
+    "nome": "PIZZARIA ALVES",
+    "slug": "pizzaria-alves",
+    "categoria": "Pizzaria e Esfiharia",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pizzas e esfihas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511976235411",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Pizzaria Alves oferece pizzas e esfihas."
+  },
+  {
+    "id": "78",
+    "nome": "PIZZARIA PRIMU'S",
+    "slug": "pizzaria-primus",
+    "categoria": "Pizzaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pizzas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511949644430",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Pizzaria Primu's é especializada em pizzas."
+  },
+  {
+    "id": "79",
+    "nome": "PIZZARIA MALUQUINHOS",
+    "slug": "pizzaria-maluquinhos",
+    "categoria": "Pizzaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pizzas em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511975861122",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Pizzaria Maluquinhos oferece pizzas em geral."
+  },
+  {
+    "id": "80",
+    "nome": "GEEK BURGUER",
+    "slug": "geek-burguer",
+    "categoria": "Lanches",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Hambúrguer artesanal"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511998986749",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Geek Burguer é especializado em hambúrgueres artesanais."
+  },
+  {
+    "id": "81",
+    "nome": "NIKA BURGUER BBQ",
+    "slug": "nika-burguer-bbq",
+    "categoria": "Lanches e Porções",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Lanches",
+      "Porções",
+      "Combos",
+      "Bebidas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511930706407",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Nika Burguer BBQ oferece lanches, porções, combos e bebidas."
+  },
+  {
+    "id": "82",
+    "nome": "LCB BURGUER CESAR",
+    "slug": "lcb-burguer-cesar",
+    "categoria": "Lanches",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Hambúrguer artesanal"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511933017215",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "LCB Burguer Cesar é especializado em hambúrgueres artesanais."
+  },
+  {
+    "id": "83",
+    "nome": "BOLOS ROSELI",
+    "slug": "bolos-roseli",
+    "categoria": "Bolos",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Bolos de diversos sabores"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511934690411",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Roseli faz bolos de diversos sabores."
+  },
+  {
+    "id": "84",
+    "nome": "BOLOS SILVIA",
+    "slug": "bolos-silvia",
+    "categoria": "Bolos e Salgados",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Bolos",
+      "Doces",
+      "Salgados"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511959474590",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Silvia faz bolos, doces e salgados."
+  },
+  {
+    "id": "85",
+    "nome": "BOLOS NEUSA",
+    "slug": "bolos-neusa",
+    "categoria": "Bolos e Sobremesas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Bolos",
+      "Doces",
+      "Lanches"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511996555856",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Neusa faz bolos, doces e lanches."
+  },
+  {
+    "id": "86",
+    "nome": "IRIS IMPERIO FORMIGUINHAS",
+    "slug": "iris-imperio-formiguinhas",
+    "categoria": "Bolos para Festas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Bolos para festas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511968562053",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Iris Imperio Formiguinhas é especializada em bolos para festas."
+  },
+  {
+    "id": "87",
+    "nome": "LUCIANA SOUZA",
+    "slug": "luciana-souza-bolos",
+    "categoria": "Bolos",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Bolos em Geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511982553373",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Luciana Souza faz bolos em geral."
+  },
+  {
+    "id": "88",
+    "nome": "NILCE SALGADOS",
+    "slug": "nilce-salgados",
+    "categoria": "Salgados",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pão de queijo congelado e salgados"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511974699019",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Nilce vende pão de queijo congelado e salgados."
+  },
+  {
+    "id": "89",
+    "nome": "MEU SALGADO FAVORITO",
+    "slug": "meu-salgado-favorito-cleide",
+    "categoria": "Salgados",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Salgados e minichurros"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511987305685",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Meu Salgado Favorito (Cleide) vende salgados e minichurros."
+  },
+  {
+    "id": "90",
+    "nome": "PAULA MÍTICO",
+    "slug": "paula-mitico-salgados-doces",
+    "categoria": "Salgados e Doces",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Salgados, doces e bolos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511999516312",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Paula Mítico faz salgados, doces e bolos."
+  },
+  {
+    "id": "91",
+    "nome": "GUSTAVO MAQUI",
+    "slug": "gustavo-maqui-defumados",
+    "categoria": "Defumados",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Defumados e Charcutaria"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511959002727",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Gustavo Maqui produz defumados e produtos de charcutaria."
+  },
+  {
+    "id": "92",
+    "nome": "MONISE MORAES",
+    "slug": "monise-moraes-trufas",
+    "categoria": "Doces",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Trufas",
+      "Bombons",
+      "Ovos de páscoa"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511989500048",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Monise Moraes faz trufas, bombons e ovos de páscoa."
+  },
+  {
+    "id": "93",
+    "nome": "CÉLIA",
+    "slug": "celia-pao-de-mel",
+    "categoria": "Doces",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pão de mel e doces sob encomenda"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511997443243",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Célia faz pão de mel e doces sob encomenda."
+  },
+  {
+    "id": "94",
+    "nome": "DOCES DA ANA",
+    "slug": "doces-da-ana",
+    "categoria": "Doces",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Brigadeiro",
+      "Trufas",
+      "Bolo de pote"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511965272112",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Ana faz brigadeiros, trufas e bolo de pote."
+  },
+  {
+    "id": "95",
+    "nome": "BY FIT AYRTON",
+    "slug": "by-fit-ayrton",
+    "categoria": "Produtos Naturais",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Castanhas",
+      "Nozes",
+      "Frutas secas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511948159446",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "By Fit Ayrton vende produtos naturais como castanhas, nozes e frutas secas."
+  },
+  {
+    "id": "96",
+    "nome": "MARISTELA",
+    "slug": "padaria-maristela",
+    "categoria": "Padaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pães e outros"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511941646969",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Padaria Maristela oferece pães e outros produtos."
+  },
+  {
+    "id": "97",
+    "nome": "MIRANTE",
+    "slug": "padaria-mirante",
+    "categoria": "Padaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pães e outros"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511971558358",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Padaria Mirante oferece pães e outros produtos."
+  },
+  {
+    "id": "98",
+    "nome": "KAZCUBO",
+    "slug": "mercado-kazcubo",
+    "categoria": "Mercado",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Mercado completo"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511935000108",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Kazcubo é um mercado completo."
+  },
+  {
+    "id": "99",
+    "nome": "IZZO CARNES",
+    "slug": "izzo-carnes",
+    "categoria": "Carnes",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Carnes em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511943749159",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Izzo Carnes oferece carnes em geral."
+  },
+  {
+    "id": "100",
+    "nome": "HORTA LEVE HORTALIÇAS",
+    "slug": "horta-leve-hortalicas",
+    "categoria": "Hortaliças",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Verduras e legumes higienizados"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511995478401",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Horta Leve Hortaliças entrega verduras e legumes já higienizados."
+  },
+  {
+    "id": "101",
+    "nome": "HORTA ORGÂNICA",
+    "slug": "horta-organica",
+    "categoria": "Frutas e Legumes",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Produtos Orgânicos e sustentáveis"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511957860188",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Horta Orgânica oferece produtos orgânicos e sustentáveis."
+  },
+  {
+    "id": "102",
+    "nome": "FRUTAS VERDURAS GILMAR",
+    "slug": "frutas-verduras-gilmar",
+    "categoria": "Frutas e Verduras",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Frutas, verduras e legumes"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511996886294",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Gilmar vende frutas, verduras e legumes."
+  },
+  {
+    "id": "103",
+    "nome": "TAKAMORES",
+    "slug": "takamores",
+    "categoria": "Verduras e Peixes",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Verduras e pescaria"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511943746465",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Takamores vende verduras e peixes."
+  },
+  {
+    "id": "104",
+    "nome": "MEL CAMARGO",
+    "slug": "mel-camargo",
+    "categoria": "Mel e Própolis",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Mel",
+      "Própolis",
+      "Ovos caipira"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511970906611",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Mel Camargo vende mel, própolis e ovos caipira."
+  },
+  {
+    "id": "105",
+    "nome": "BELLA DONA PASTERIA",
+    "slug": "bella-dona-pasteria",
+    "categoria": "Massas e Molhos",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Massas",
+      "Pastéis",
+      "Molhos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511950240088",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Bella Dona Pasteria é especializada em massas, pastéis e molhos."
+  },
+  {
+    "id": "106",
+    "nome": "MASSAS TIA RÊ - Renata",
+    "slug": "massas-tia-re-renata",
+    "categoria": "Massas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Massas",
+      "Panquecas",
+      "Salgados"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511984165809",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Massas Tia Rê (Renata) faz massas, panquecas e salgados."
+  },
+  {
+    "id": "107",
+    "nome": "KASSEL AÇOUGUE",
+    "slug": "kassel-acougue",
+    "categoria": "Açougue",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Carnes, frangos e demais"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511964636585",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Açougue Kassel oferece carnes, frangos e outros."
+  },
+  {
+    "id": "108",
+    "nome": "REI DA CARNE",
+    "slug": "rei-da-carne",
+    "categoria": "Açougue",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Carnes em geral e assados"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511934656872",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Rei da Carne oferece carnes em geral e assados."
+  },
+  {
+    "id": "109",
+    "nome": "M&M",
+    "slug": "mm-frios-laticinios",
+    "categoria": "Frios e Laticínios",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Queijos, frios e diversos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511998541384",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "M&M vende queijos, frios e produtos diversos."
+  },
+  {
+    "id": "110",
+    "nome": "ÂNGELA GELÉIAS",
+    "slug": "angela-geleias",
+    "categoria": "Geléias e Antepastos",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Geléias e antepastos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511943875784",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Ângela produz geléias e antepastos artesanais."
+  },
+  {
+    "id": "111",
+    "nome": "AÇAÍ DO PARDAL",
+    "slug": "acai-do-pardal",
+    "categoria": "Açaí",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Produtos com açaí"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511982070689",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Açaí do Pardal é especializado em produtos com açaí."
+  },
+  {
+    "id": "112",
+    "nome": "ADEGA CAÇULA",
+    "slug": "adega-cacula",
+    "categoria": "Bebidas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Bebidas no atacado e varejo"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511995585958",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Adega Caçula vende bebidas no atacado e varejo."
+  },
+  {
+    "id": "113",
+    "nome": "ADEGA DO BIGODE",
+    "slug": "adega-do-bigode",
+    "categoria": "Bebidas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Bebidas no atacado e varejo"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511988871333",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Adega do Bigode vende bebidas no atacado e varejo."
+  },
+  {
+    "id": "114",
+    "nome": "ADEGA FACTORY",
+    "slug": "adega-factory",
+    "categoria": "Bebidas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Bebidas no atacado e varejo",
+      "Entrega"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511978409558",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Adega Factory vende bebidas no atacado e varejo e faz entregas."
+  },
+  {
+    "id": "115",
+    "nome": "ARMANDO ROCHA",
+    "slug": "armando-rocha-corretor-seguros",
+    "categoria": "Corretor de Seguros",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Seguros de Veículos",
+      "Seguro residencial",
+      "Seguro de empresas",
+      "Planos de saúde",
+      "Consórcios"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511999353451",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Armando Rocha é corretor e trabalha com seguros, planos de saúde e consórcios."
+  },
+  {
+    "id": "116",
+    "nome": "ANDRÉIA MAURA MOURA",
+    "slug": "andreia-maura-moura-arquiteta",
+    "categoria": "Arquiteta",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Aprovações",
+      "Regularizações",
+      "Reformas",
+      "Projetos para Prefeitura, Cetesb, Semasa"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511972074019",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Andréia Maura Moura é Arquiteta, Urbanista e Designer."
+  },
+  {
+    "id": "117",
+    "nome": "ANDRÉA DE ALMEIDA BOLLÓ",
+    "slug": "andrea-de-almeida-bollo-biologa",
+    "categoria": "Bióloga",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Relatório e Análise de vegetação"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511970837444",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Andréa de Almeida Bolló é Bióloga e faz relatórios e análise de vegetação."
+  },
+  {
+    "id": "118",
+    "nome": "GRÁFICA PAPAGAIO",
+    "slug": "grafica-papagaio",
+    "categoria": "Gráfica",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de impressões e plotagens"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511972885199",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Gráfica Papagaio oferece serviços de impressão e plotagem."
+  },
+  {
+    "id": "119",
+    "nome": "GRÁFICA FENEME",
+    "slug": "grafica-feneme",
+    "categoria": "Gráfica",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de impressões e plotagens"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511999701344",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Gráfica Feneme oferece serviços de impressão e plotagem."
+  },
+  {
+    "id": "120",
+    "nome": "GRÁFICA CTRL C",
+    "slug": "grafica-ctrl-c",
+    "categoria": "Gráfica",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de impressões e plotagens"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511933203485",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Gráfica Ctrl C oferece serviços de impressão e plotagem."
+  },
+  {
+    "id": "121",
+    "nome": "CHAVEIRO VANDI",
+    "slug": "chaveiro-vandi",
+    "categoria": "Chaveiro",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de chaves em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511969083085",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Vandi é chaveiro e oferece serviços de chaves em geral."
+  },
+  {
+    "id": "122",
+    "nome": "CHAVEIRO FRANKLIN",
+    "slug": "chaveiro-franklin",
+    "categoria": "Chaveiro",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de chaves em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511973207966",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Franklin é chaveiro e oferece serviços de chaves em geral."
+  },
+  {
+    "id": "123",
+    "nome": "CAÇULA DESPACHANTE",
+    "slug": "cacula-despachante",
+    "categoria": "Despachante",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Documentos de veículos e CNH"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511962643226",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Caçula Despachante auxilia com documentos de veículos e CNH."
+  },
+  {
+    "id": "124",
+    "nome": "LARISSA MARIA",
+    "slug": "larissa-maria-design-interiores",
+    "categoria": "Design de Interiores",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Design de interiores e paisagismo"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511999714709",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Larissa Maria é designer e trabalha com interiores e paisagismo."
+  },
+  {
+    "id": "125",
+    "nome": "VÍTOR MOURA ROCHA",
+    "slug": "vitor-moura-rocha-professor-ingles",
+    "categoria": "Professor de Inglês",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Aulas, treinamento, conversação",
+      "Inglês Corporativo",
+      "Proficiência"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511942764562",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Vítor Moura Rocha é professor de inglês e oferece aulas, treinamento e conversação."
+  },
+  {
+    "id": "126",
+    "nome": "ALBERT",
+    "slug": "albert-professor-ingles",
+    "categoria": "Professor de Inglês",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Aulas online ou presencial"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "554784093506",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Albert é professor de inglês e oferece aulas online ou presenciais."
+  },
+  {
+    "id": "127",
+    "nome": "BRECHÓ STRELITZIA",
+    "slug": "brecho-strelitzia",
+    "categoria": "Brechó",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Roupas usadas femininas e masculinas",
+      "Calçados",
+      "Acessórios"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511997589802",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Brechó Strelitzia vende roupas usadas, calçados e acessórios."
+  },
+  {
+    "id": "128",
+    "nome": "WIIL MAQ",
+    "slug": "wiil-maq-assistencia-tecnica",
+    "categoria": "Assistência Técnica",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Conserto de geladeiras",
+      "Conserto de máquinas de lavar",
+      "Conserto de eletrodomésticos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511997163305",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Wiil Maq oferece assistência técnica para geladeiras, máquinas de lavar e outros eletrodomésticos."
+  },
+  {
+    "id": "129",
+    "nome": "TÉCNICO FOGÃO JOSUÉ",
+    "slug": "tecnico-fogao-josue",
+    "categoria": "Assistência Técnica",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Consertos de fogão"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511982737232",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Josué é técnico especializado em consertos de fogões."
+  },
+  {
+    "id": "130",
+    "nome": "RAFAEL TÉCNICO",
+    "slug": "rafael-tecnico",
+    "categoria": "Assistência Técnica",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Conserto de geladeiras",
+      "Conserto de máquinas de lavar",
+      "Conserto de eletrodomésticos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511960485501",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Rafael oferece assistência técnica para geladeiras, máquinas de lavar e outros eletrodomésticos."
+  },
+  {
+    "id": "131",
+    "nome": "MIRO ANTENISTA",
+    "slug": "miro-antenista",
+    "categoria": "Técnico Antenista",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Técnico de Antena"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511999408086",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Miro é técnico de antenas."
+  },
+  {
+    "id": "132",
+    "nome": "CLAUDIO AZBO",
+    "slug": "claudio-azbo-antenista",
+    "categoria": "Técnico Antenista",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "IPTV",
+      "Instalação e atualização de satélite"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511971722791",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Claudio Azbo oferece serviços de instalação e atualização de IPTV e satélite."
+  },
+  {
+    "id": "133",
+    "nome": "MANANCIAL INFORMÁTICA",
+    "slug": "manancial-informatica",
+    "categoria": "Informática",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Formatação",
+      "Limpeza",
+      "Troca de peças"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511972330497",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Manancial Informática oferece serviços de formatação, limpeza e troca de peças de computadores."
+  },
+  {
+    "id": "134",
+    "nome": "JAIME TAPECEIRO",
+    "slug": "jaime-tapeceiro",
+    "categoria": "Tapeçaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de tapeçaria"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511957986346",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Jaime é tapeceiro e oferece serviços na área."
+  },
+  {
+    "id": "135",
+    "nome": "TODO APOIO APLICATIVOS",
+    "slug": "todo-apoio-aplicativos-renata",
+    "categoria": "Desenvolvimento",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Desenvolvimento de aplicativos e sites"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511982728478",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Todo Apoio Aplicativos (Renata) desenvolve aplicativos e sites."
+  },
+  {
+    "id": "136",
+    "nome": "LURI LAVANDERIA",
+    "slug": "luri-lavanderia",
+    "categoria": "Lavanderia",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Lavagem de edredons, tapetes e cobertores"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511989371650",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Luri Lavanderia é especializada na lavagem de edredons, tapetes e cobertores."
+  },
+  {
+    "id": "137",
+    "nome": "LAVA RÁPIDO LEVA E TRÁS",
+    "slug": "lava-rapido-leva-tras",
+    "categoria": "Lava Rápido",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Lavagem de veículos (retira e entrega)"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511968098608",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Lava Rápido Leva e Trás oferece lavagem de veículos com serviço de retirada e entrega."
+  },
+  {
+    "id": "138",
+    "nome": "NEI UBER",
+    "slug": "nei-uber",
+    "categoria": "Transporte",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Uber"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511982206702",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Nei oferece serviços de transporte por aplicativo."
+  },
+  {
+    "id": "139",
+    "nome": "LEONARDO UBER",
+    "slug": "leonardo-uber",
+    "categoria": "Transporte",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Uber"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511969279898",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Leonardo oferece serviços de transporte por aplicativo."
+  },
+  {
+    "id": "140",
+    "nome": "JOKA UBER",
+    "slug": "joka-uber",
+    "categoria": "Transporte",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Uber"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511965876190",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Joka oferece serviços de transporte por aplicativo."
+  },
+  {
+    "id": "141",
+    "nome": "WESLEY SILVA",
+    "slug": "wesley-silva-uber",
+    "categoria": "Transporte",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Uber"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511980538709",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Wesley Silva oferece serviços de transporte por aplicativo."
+  },
+  {
+    "id": "142",
+    "nome": "CARLOS EDUARDO",
+    "slug": "carlos-eduardo-uber",
+    "categoria": "Transporte",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Uber"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511952569614",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Carlos Eduardo oferece serviços de transporte por aplicativo."
+  },
+  {
+    "id": "143",
+    "nome": "FABIO UBER CAÇULA",
+    "slug": "fabio-uber-cacula",
+    "categoria": "Transporte",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Uber"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511947607218",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Fábio (Caçula) oferece serviços de transporte por aplicativo."
+  },
+  {
+    "id": "144",
+    "nome": "MATHEUS",
+    "slug": "matheus-uber",
+    "categoria": "Transporte",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de Uber"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511953568862",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Matheus oferece serviços de transporte por aplicativo."
+  },
+  {
+    "id": "145",
+    "nome": "ALBERTO",
+    "slug": "alberto-luthier",
+    "categoria": "Luthier",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Construção de Violino e Violoncelo",
+      "Aulas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511964512857",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Alberto é Luthier, constrói violinos e violoncelos e dá aulas."
+  },
+  {
+    "id": "146",
+    "nome": "GUINCHO MARCOS",
+    "slug": "guincho-marcos",
+    "categoria": "Guincho",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Guincho e socorro"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511994062087",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Marcos oferece serviço de guincho e socorro."
+  },
+  {
+    "id": "147",
+    "nome": "GUINCHO JP",
+    "slug": "guincho-jp",
+    "categoria": "Guincho",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Guincho e socorro"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511940318228",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "JP oferece serviço de guincho e socorro."
+  },
+  {
+    "id": "148",
+    "nome": "FAC DRONE",
+    "slug": "fac-drone",
+    "categoria": "Drone",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Filmagens e fotografias aéreas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511986628345",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "FAC Drone realiza filmagens e fotografias aéreas."
+  },
+  {
+    "id": "149",
+    "nome": "ALUGUEL MESAS",
+    "slug": "aluguel-mesas",
+    "categoria": "Aluguel de Mesas e Cadeiras",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Aluguel de mesas e cadeiras"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511982644739",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Aluguel de mesas e cadeiras para eventos."
+  },
+  {
+    "id": "150",
+    "nome": "IRENE DIARISTA",
+    "slug": "irene-diarista",
+    "categoria": "Diarista",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de limpeza diária"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511984130546",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Irene oferece serviços de limpeza como diarista."
+  },
+  {
+    "id": "151",
+    "nome": "GORETE DIARISTA",
+    "slug": "gorete-diarista",
+    "categoria": "Diarista",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de limpeza diária"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511964288423",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Gorete oferece serviços de limpeza como diarista."
+  },
+  {
+    "id": "152",
+    "nome": "ELISABETE DIARISTA",
+    "slug": "elisabete-diarista",
+    "categoria": "Diarista",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de limpeza diária"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511986628001",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Elisabete oferece serviços de limpeza como diarista."
+  },
+  {
+    "id": "153",
+    "nome": "SHEILA",
+    "slug": "sheila-diarista-baba",
+    "categoria": "Diarista e Babá",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Limpeza geral",
+      "Cuidados com crianças"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511992387123",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Sheila trabalha como diarista e babá."
+  },
+  {
+    "id": "154",
+    "nome": "NATALY DECORAÇÕES",
+    "slug": "nataly-decoracoes",
+    "categoria": "Decoração de Festas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de decoração de festas gerais"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511987159073",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Nataly Decorações oferece serviços de decoração para festas."
+  },
+  {
+    "id": "155",
+    "nome": "MÁRIO ROGÉRIO KAYSER",
+    "slug": "mario-rogerio-kayser-advogado",
+    "categoria": "Advogado",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Advogado trabalhista"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511991627359",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Mário Rogério Kayser é advogado especialista na área trabalhista."
+  },
+  {
+    "id": "156",
+    "nome": "JEAN RAPHAEL PETRONE",
+    "slug": "jean-raphael-petrone-advogado",
+    "categoria": "Advogado",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Geral",
+      "Imobiliário",
+      "Bancário",
+      "Extrajudicial"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511967000098",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Jean Raphael Petrone é advogado com atuação nas áreas imobiliária, bancária e extrajudicial."
+  },
+  {
+    "id": "157",
+    "nome": "ALESSANDRA ZANELLA",
+    "slug": "alessandra-zanella-advogada",
+    "categoria": "Advogada",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de advocacia em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511973668831",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Alessandra Zanella é advogada e oferece serviços de advocacia em geral."
+  },
+  {
+    "id": "158",
+    "nome": "BARBARA LEOCÁDIO",
+    "slug": "barbara-leocadio-advogada",
+    "categoria": "Advogada",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Assessoria Imobiliária e contratual",
+      "Inventários",
+      "Administração de Bens",
+      "Atuação processual no Direito Civil"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511976320838",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Barbara Leocádio é advogada especialista em Direito Civil, Imobiliário e Contratual."
+  },
+  {
+    "id": "159",
+    "nome": "VIDRACEIRO RUBEM",
+    "slug": "vidraceiro-rubem",
+    "categoria": "Vidraçaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Vidros",
+      "Box",
+      "Espelhos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511981455050",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Rubem é vidraceiro e instala vidros, boxes e espelhos."
+  },
+  {
+    "id": "160",
+    "nome": "VIDRACEIRO AUGUSTO",
+    "slug": "vidraceiro-augusto",
+    "categoria": "Vidraçaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Vidros",
+      "Box",
+      "Espelhos"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511958751060",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Augusto é vidraceiro e instala vidros, boxes e espelhos."
+  },
+  {
+    "id": "161",
+    "nome": "VIDRACEIRO OCTACÍLIO",
+    "slug": "vidraceiro-octacilio",
+    "categoria": "Vidraçaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Vidros",
+      "Box",
+      "Espelhos",
+      "Portas e telas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511975961022",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Octacílio é vidraceiro e instala vidros, boxes, espelhos, portas e telas."
+  },
+  {
+    "id": "162",
+    "nome": "SERGINHO AR",
+    "slug": "serginho-ar-condicionado",
+    "categoria": "Ar Condicionado",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Técnico de ar condicionado"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511945342432",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Serginho é técnico de ar condicionado."
+  },
+  {
+    "id": "163",
+    "nome": "JORGE LUIZ",
+    "slug": "jorge-luiz-eletricista",
+    "categoria": "Eletricista",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Instalações elétricas em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511989238141",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Jorge Luiz é eletricista e faz instalações elétricas em geral."
+  },
+  {
+    "id": "164",
+    "nome": "J & E ELÉTRICA",
+    "slug": "j-e-eletrica",
+    "categoria": "Eletricista",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Elétrica geral",
+      "Ar condicionado",
+      "Microondas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511989653327",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "J & E Elétrica oferece serviços de elétrica geral, ar condicionado e microondas."
+  },
+  {
+    "id": "165",
+    "nome": "LEANDRO MONTADOR",
+    "slug": "leandro-montador",
+    "categoria": "Montador de Móveis",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de montagem de móveis"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511973887697",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Leandro é montador de móveis."
+  },
+  {
+    "id": "166",
+    "nome": "DRYWALL THIAGO",
+    "slug": "drywall-thiago",
+    "categoria": "Gesso e Drywall",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços gerais com gesso e drywall"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511959629510",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Thiago é especialista em serviços de gesso e drywall."
+  },
+  {
+    "id": "167",
+    "nome": "ENICÁCIO",
+    "slug": "enicacio-porcelanato",
+    "categoria": "Porcelanato Líquido",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pisos em porcelanato líquido 3D"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511964380243",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Enicácio é especialista em aplicação de pisos de porcelanato líquido 3D."
+  },
+  {
+    "id": "168",
+    "nome": "FERNANDO TELHADISTA",
+    "slug": "fernando-telhadista",
+    "categoria": "Telhadista",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Confecção e conserto de telhados",
+      "Manutenção"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511997095750",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Fernando é telhadista e faz confecção, conserto e manutenção de telhados."
+  },
+  {
+    "id": "169",
+    "nome": "CAÇAMBA MARLENE",
+    "slug": "cacamba-marlene",
+    "categoria": "Caçamba",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Remoção de entulho"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511978092461",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Marlene oferece aluguel de caçamba para remoção de entulho."
+  },
+  {
+    "id": "170",
+    "nome": "CAÇAMBA TUTI",
+    "slug": "cacamba-tuti",
+    "categoria": "Caçamba",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Remoção de entulho"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511997363946",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Tuti oferece aluguel de caçamba para remoção de entulho."
+  },
+  {
+    "id": "171",
+    "nome": "GERSON GRAFIATO",
+    "slug": "gerson-grafiato",
+    "categoria": "Pintura e Grafiato",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços gerais de pintura e grafiato"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511968303086",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Gerson oferece serviços de pintura e aplicação de grafiato."
+  },
+  {
+    "id": "172",
+    "nome": "ROZENDO MIGUEL",
+    "slug": "rozendo-miguel-pintura-reforma",
+    "categoria": "Pintura e Reforma",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pinturas e reformas em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511984966664",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Rozendo Miguel realiza pinturas e reformas em geral."
+  },
+  {
+    "id": "173",
+    "nome": "SERRALHEIRO GUTO",
+    "slug": "serralheiro-guto",
+    "categoria": "Serralheria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de serralheria em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511975534511",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Guto é serralheiro e realiza serviços em geral."
+  },
+  {
+    "id": "174",
+    "nome": "SERRALHERIA ELOI",
+    "slug": "serralheria-eloi",
+    "categoria": "Serralheria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de serralheria em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511995554368",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Serralheria Eloi realiza serviços de serralheria em geral."
+  },
+  {
+    "id": "175",
+    "nome": "SERRALHEIRO LEO",
+    "slug": "serralheiro-leo",
+    "categoria": "Serralheria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de serralheria em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511964172945",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Leo é serralheiro e realiza serviços em geral."
+  },
+  {
+    "id": "176",
+    "nome": "SERRALHERIA IGJ",
+    "slug": "serralheria-igj",
+    "categoria": "Serralheria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de serralheria em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511998753740",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Serralheria IGJ realiza serviços de serralheria em geral."
+  },
+  {
+    "id": "177",
+    "nome": "LUIZ CARLOS (CANARINHO)",
+    "slug": "luiz-carlos-canarinho-serralheiro",
+    "categoria": "Serralheria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de serralheria em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511972694120",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Luiz Carlos (Canarinho) é serralheiro e realiza serviços em geral."
+  },
+  {
+    "id": "178",
+    "nome": "GRANDE GRAZI",
+    "slug": "grande-grazi-calhas",
+    "categoria": "Calhas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços de calhas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511945542057",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Grande Grazi é especializada em serviços de calhas."
+  },
+  {
+    "id": "179",
+    "nome": "FRAN PRAG",
+    "slug": "fran-prag-dedetizadora",
+    "categoria": "Dedetizadora",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Detetização de pragas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511998540408",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Fran Prag é uma empresa de dedetização de pragas."
+  },
+  {
+    "id": "180",
+    "nome": "RICARDO DETETIZAÇÃO",
+    "slug": "ricardo-detetizacao",
+    "categoria": "Dedetizadora",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Detetização de pragas",
+      "Limpeza de caixa d'água"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511985489848",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Ricardo oferece serviços de dedetização e limpeza de caixa d'água."
+  },
+  {
+    "id": "181",
+    "nome": "CASA DO CONSTRUTOR",
+    "slug": "casa-do-construtor",
+    "categoria": "Locação de Máquinas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Locação de equipamentos e máquinas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511941220077",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Casa do Construtor aluga equipamentos e máquinas para construção."
+  },
+  {
+    "id": "182",
+    "nome": "ORLANDO",
+    "slug": "orlando-marido-de-aluguel",
+    "categoria": "Marido de Aluguel",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços Gerais"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511951411434",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Orlando oferece serviços gerais como marido de aluguel."
+  },
+  {
+    "id": "183",
+    "nome": "CÍCERO PRESTAÇÃO",
+    "slug": "cicero-prestacao-fossas",
+    "categoria": "Limpa Fossa",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Limpeza de fossas e serviços gerais"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511972989533",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Cícero realiza limpeza de fossas e outros serviços gerais."
+  },
+  {
+    "id": "184",
+    "nome": "LIMPA FOSSA LUCIO",
+    "slug": "limpa-fossa-lucio",
+    "categoria": "Limpa Fossa",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Limpeza de fossa"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511995801838",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Lúcio é especializado em limpeza de fossas."
+  },
+  {
+    "id": "185",
+    "nome": "ALEX TOLDOS",
+    "slug": "alex-toldos",
+    "categoria": "Toldos e Coberturas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Toldos",
+      "Coberturas",
+      "Persianas"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511974854805",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Alex Toldos trabalha com a instalação de toldos, coberturas e persianas."
+  },
+  {
+    "id": "186",
+    "nome": "DUMAQ CONSERTOS",
+    "slug": "dumaq-consertos",
+    "categoria": "Conserto de Máquinas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Conserto de bombas de poço",
+      "Conserto de roçadeiras"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511997331630",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Dumaq conserta bombas de poço e roçadeiras."
+  },
+  {
+    "id": "187",
+    "nome": "LEANDRO FERRAMENTAS",
+    "slug": "leandro-ferramentas",
+    "categoria": "Conserto de Máquinas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Conserto de bombas de poço",
+      "Conserto de roçadeiras"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511972575702",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Leandro Ferramentas conserta bombas de poço e roçadeiras."
+  },
+  {
+    "id": "188",
+    "nome": "FEITOSA CONSERTO",
+    "slug": "feitosa-conserto-bombas",
+    "categoria": "Conserto de Bombas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Consertos de bombas de poço"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511977293920",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Feitosa é especializado em consertos de bombas de poço."
+  },
+  {
+    "id": "189",
+    "nome": "ACQUA SERVICE - Antonio",
+    "slug": "acqua-service-antonio",
+    "categoria": "Análise de Água",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Análise de qualidade de água"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511992972445",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Acqua Service (Antonio) realiza análise da qualidade da água."
+  },
+  {
+    "id": "190",
+    "nome": "TIÃO POCEIRO",
+    "slug": "tiao-poceiro",
+    "categoria": "Poços e Bombas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Construção de poços",
+      "Serviços e manutenção"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511983674620",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Tião Poceiro trabalha com construção e manutenção de poços."
+  },
+  {
+    "id": "191",
+    "nome": "BIG CLEAN LIMPEZA",
+    "slug": "big-clean-limpeza",
+    "categoria": "Lavagem de Estofados",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Lavagem e higienização de sofás, cortinas e colchões"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511991173381",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Big Clean faz lavagem e higienização de sofás, cortinas e colchões."
+  },
+  {
+    "id": "192",
+    "nome": "GABI FLORES E PLANTAS",
+    "slug": "gabi-flores-plantas",
+    "categoria": "Flores e Plantas",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Produtos e insumos para jardins"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511947059659",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Gabi Flores e Plantas vende produtos e insumos para jardinagem."
+  },
+  {
+    "id": "193",
+    "nome": "NOVACASANOVA",
+    "slug": "deposito-novacasanova",
+    "categoria": "Material de Construção",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Material de construção em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511972160331",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Novacasanova é um depósito de material de construção."
+  },
+  {
+    "id": "194",
+    "nome": "BELLA CASA",
+    "slug": "deposito-bella-casa",
+    "categoria": "Material de Construção",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Material de construção em geral"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511973268071",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Bella Casa é um depósito de material de construção."
+  },
+  {
+    "id": "195",
+    "nome": "SÉRGIO AREIA E PEDRA",
+    "slug": "sergio-areia-pedra",
+    "categoria": "Material Básico",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Areia",
+      "Pedra",
+      "Pedrisco"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511996072255",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Sérgio vende materiais básicos para construção como areia, pedra e pedrisco."
+  },
+  {
+    "id": "196",
+    "nome": "MAURÍCIO",
+    "slug": "mauricio-pedreiro",
+    "categoria": "Pedreiro",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços gerais de construção"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511947000904",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Maurício é pedreiro e realiza serviços gerais de construção."
+  },
+  {
+    "id": "197",
+    "nome": "HAMILTON",
+    "slug": "hamilton-pedreiro",
+    "categoria": "Pedreiro",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços gerais de construção"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511983148015",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Hamilton é pedreiro e realiza serviços gerais de construção."
+  },
+  {
+    "id": "198",
+    "nome": "DANILO",
+    "slug": "danilo-pedreiro",
+    "categoria": "Pedreiro",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Serviços gerais de construção"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511964002047",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Danilo é pedreiro e realiza serviços gerais de construção."
+  },
+  {
+    "id": "199",
+    "nome": "CARRETO THIAGO",
+    "slug": "carreto-thiago",
+    "categoria": "Carreto",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Mudanças e carreto"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511940122499",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Thiago realiza mudanças e carretos."
+  },
+  {
+    "id": "200",
+    "nome": "SR. SOUZA",
+    "slug": "sr-souza-carreto",
+    "categoria": "Carreto e Frete",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Mudanças e carretos pequenos e médios"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511989557508",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Sr. Souza realiza mudanças e carretos de pequeno e médio porte."
+  },
+  {
+    "id": "201",
+    "nome": "NELSON RP",
+    "slug": "nelson-rp-carreto",
+    "categoria": "Carreto e Frete",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Mudanças e carreto"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511947783166",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Nelson RP realiza mudanças e carretos."
   }
 ]
