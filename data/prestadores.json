@@ -17,10 +17,7 @@
     ],
     "whatsapp": "5511999999999",
     "instagram": "joao_eletricista",
-    "fotos": [
-      "assets/images/joao_eletricista/foto1.webp",
-      "assets/images/joao_eletricista/foto2.jpg"
-    ],
+    "fotos": [],
     "descricao": "Eletricista com mais de 10 anos de experiência, especializado em instalações residenciais e comerciais no Parque Andreense. Atendimento rápido e seguro."
   },
   {
@@ -39,17 +36,14 @@
     "preco_base": "A partir de R$ 40",
     "whatsapp": "5511988888888",
     "instagram": "maria_manicure_andreense",
-    "fotos": [
-      "https://via.placeholder.com/400x300",
-      "https://via.placeholder.com/400x300"
-    ],
+    "fotos": [],
     "descricao": "Manicure profissional com as melhores técnicas de esmaltação e alongamento de unhas. Atendo a domicílio na região do Parque Andreense."
   },
   {
     "id": "3",
     "nome": "Carlos Pedreiro",
     "slug": "carlos-pedreiro",
-    "categoria": "Reformas",
+    "categoria": "Pedreiro",
     "ativo": false,
     "destaque": false,
     "servicos": [
@@ -61,9 +55,7 @@
     "preco_base": "Orçamento sem compromisso",
     "whatsapp": "5511977777777",
     "instagram": "carlos_reformas",
-    "fotos": [
-      "https://via.placeholder.com/400x300"
-    ],
+    "fotos": [],
     "descricao": "Especialista em pequenas reformas e reparos. Profissionalismo e pontualidade."
   },
   {
@@ -92,7 +84,7 @@
     "id": "7",
     "nome": "DROGARIA ESTAÇÃO",
     "slug": "drogaria-estacao",
-    "categoria": "Drogaria",
+    "categoria": "Farmácias",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -109,7 +101,7 @@
     "id": "8",
     "nome": "BRASIL GENÉRICOS",
     "slug": "brasil-genericos",
-    "categoria": "Drogaria",
+    "categoria": "Farmácias",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -126,7 +118,7 @@
     "id": "9",
     "nome": "DROGARIA CAÇULA",
     "slug": "drogaria-cacula",
-    "categoria": "Drogaria",
+    "categoria": "Farmácias",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -143,7 +135,7 @@
     "id": "10",
     "nome": "DROGARIA SANTIAGO",
     "slug": "drogaria-santiago",
-    "categoria": "Drogaria",
+    "categoria": "Farmácias",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -160,7 +152,7 @@
     "id": "11",
     "nome": "ESSENCIAL PHARMÁCIA",
     "slug": "essencial-pharmacia",
-    "categoria": "Manipulação",
+    "categoria": "Farmácias",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -177,7 +169,7 @@
     "id": "12",
     "nome": "FARMACY FÓRMULAS",
     "slug": "farmacy-formulas",
-    "categoria": "Manipulação",
+    "categoria": "Farmácias",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -194,7 +186,7 @@
     "id": "13",
     "nome": "CANTINHO DA JU",
     "slug": "cantinho-da-ju",
-    "categoria": "Banho e Tosa",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -211,7 +203,7 @@
     "id": "14",
     "nome": "ANA PAULA",
     "slug": "ana-paula-veterinaria",
-    "categoria": "Veterinária",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -228,7 +220,7 @@
     "id": "15",
     "nome": "ALEXANDRE",
     "slug": "alexandre-veterinario",
-    "categoria": "Veterinário",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -245,7 +237,7 @@
     "id": "16",
     "nome": "MOZI VET AMANDA",
     "slug": "mozi-vet-amanda",
-    "categoria": "Veterinária",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -262,7 +254,7 @@
     "id": "17",
     "nome": "VICTOR LAZARETTI",
     "slug": "victor-lazaretti-veterinario",
-    "categoria": "Veterinário",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -279,7 +271,7 @@
     "id": "18",
     "nome": "BICHO DO MATO",
     "slug": "bicho-do-mato",
-    "categoria": "Pet Shop",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -299,7 +291,7 @@
     "id": "19",
     "nome": "DISK RAÇÃO",
     "slug": "disk-racao",
-    "categoria": "Ração",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -316,7 +308,7 @@
     "id": "20",
     "nome": "CASA DAS RAÇÕES",
     "slug": "casa-das-racoes",
-    "categoria": "Ração",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -333,7 +325,7 @@
     "id": "21",
     "nome": "FARMABICHOS",
     "slug": "farmabichos",
-    "categoria": "Farmácia de Manipulação Pet",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -350,7 +342,7 @@
     "id": "22",
     "nome": "SIMONE DEMARCHI",
     "slug": "simone-demarchi-confeccoes-pet",
-    "categoria": "Confecções Pet",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -367,7 +359,7 @@
     "id": "23",
     "nome": "PETMOVEFELIZ",
     "slug": "petmovefeliz",
-    "categoria": "Banho Móvel",
+    "categoria": "Pets",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -452,7 +444,7 @@
     "id": "28",
     "nome": "DANILO TATUADOR",
     "slug": "danilo-tatuador",
-    "categoria": "Tatuagem",
+    "categoria": "Tatuagem e Piercing",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -469,7 +461,7 @@
     "id": "29",
     "nome": "VILALBA PRODUTOS",
     "slug": "vilalba-produtos",
-    "categoria": "Beleza",
+    "categoria": "Beleza e Cosméticos",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -486,7 +478,7 @@
     "id": "30",
     "nome": "PRODUTOS DA ANA",
     "slug": "produtos-da-ana",
-    "categoria": "Beleza",
+    "categoria": "Beleza e Cosméticos",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -505,7 +497,7 @@
     "id": "31",
     "nome": "NILCE PRODUTOS",
     "slug": "nilce-produtos",
-    "categoria": "Beleza",
+    "categoria": "Beleza e Cosméticos",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -522,7 +514,7 @@
     "id": "32",
     "nome": "ANDRÉ IMÓVEIS",
     "slug": "andre-imoveis",
-    "categoria": "Corretor de Imóveis",
+    "categoria": "Imóveis",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -539,7 +531,7 @@
     "id": "33",
     "nome": "CURY HAHAD IMÓVEIS - ELZA",
     "slug": "cury-hahad-imoveis-elza",
-    "categoria": "Corretor de Imóveis",
+    "categoria": "Imóveis",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -556,7 +548,7 @@
     "id": "34",
     "nome": "ANDRÉ MARTINELLI",
     "slug": "andre-martinelli-corretor",
-    "categoria": "Corretor de Imóveis",
+    "categoria": "Imóveis",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -573,7 +565,7 @@
     "id": "35",
     "nome": "EFRAIM IMÓVEIS/ROBERTA",
     "slug": "efraim-imoveis-roberta",
-    "categoria": "Corretora de Imóveis",
+    "categoria": "Imóveis",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -590,7 +582,7 @@
     "id": "36",
     "nome": "ELISABETE NAVARRO",
     "slug": "elisabete-navarro-naturologa",
-    "categoria": "Naturóloga",
+    "categoria": "Saúde e Bem-Estar",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -610,7 +602,7 @@
     "id": "37",
     "nome": "GUSTAVO MAQUI",
     "slug": "gustavo-maqui-personal",
-    "categoria": "Personal Training",
+    "categoria": "Saúde e Bem-Estar",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -627,7 +619,7 @@
     "id": "38",
     "nome": "FERNANDA",
     "slug": "fernanda-massagista",
-    "categoria": "Massagista",
+    "categoria": "Saúde e Bem-Estar",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -644,7 +636,7 @@
     "id": "39",
     "nome": "CARINA PRESTUPA",
     "slug": "carina-prestupa-psicanalista",
-    "categoria": "Psicanalista",
+    "categoria": "Saúde e Bem-Estar",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -661,7 +653,7 @@
     "id": "40",
     "nome": "ANDREA MACHADO",
     "slug": "andrea-machado-psicologa",
-    "categoria": "Psicóloga Clínica",
+    "categoria": "Saúde e Bem-Estar",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -678,7 +670,7 @@
     "id": "41",
     "nome": "KARINA",
     "slug": "karina-atividade-fisica",
-    "categoria": "Atividade Física",
+    "categoria": "Saúde e Bem-Estar",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -695,7 +687,7 @@
     "id": "42",
     "nome": "EGON FELIX HADERMANN",
     "slug": "egon-felix-hadermann-fisioterapeuta",
-    "categoria": "Fisioterapeuta",
+    "categoria": "Saúde e Bem-Estar",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -712,7 +704,7 @@
     "id": "43",
     "nome": "MEIRE CANDIDA",
     "slug": "meire-candida-podologa",
-    "categoria": "Podóloga",
+    "categoria": "Saúde e Bem-Estar",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1017,7 +1009,7 @@
     "id": "60",
     "nome": "YARA CONFECÇÕES",
     "slug": "yara-confeccoes",
-    "categoria": "Confecção",
+    "categoria": "Artesanato",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1038,7 +1030,7 @@
     "id": "61",
     "nome": "DIANA VELAS",
     "slug": "diana-velas",
-    "categoria": "Velas Artesanais",
+    "categoria": "Artesanato",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1055,7 +1047,7 @@
     "id": "62",
     "nome": "ACASADALIA - HOME STYLE",
     "slug": "acasadalia-home-style",
-    "categoria": "Produtos Artesanais",
+    "categoria": "Artesanato",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1092,7 +1084,7 @@
     "id": "64",
     "nome": "SIMONE LITZLER",
     "slug": "simone-litzler-produtos-de-beleza",
-    "categoria": "Cosméticos Artesanais",
+    "categoria": "Artesanato",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1110,7 +1102,7 @@
     "id": "65",
     "nome": "EDNA COSTURAS",
     "slug": "edna-costuras",
-    "categoria": "Costura",
+    "categoria": "Artesanato",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1127,7 +1119,7 @@
     "id": "66",
     "nome": "MORADA ECOLÓGICA",
     "slug": "morada-ecologica",
-    "categoria": "Produtos Ecológicos",
+    "categoria": "Artesanato",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1167,7 +1159,7 @@
     "id": "68",
     "nome": "SINESIO-BEBIDAS",
     "slug": "sinesio-bebidas",
-    "categoria": "Bebidas Artesanais",
+    "categoria": "Bares",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1186,7 +1178,7 @@
     "id": "69",
     "nome": "VANDA MARMITEX",
     "slug": "vanda-marmitex",
-    "categoria": "Comida Caseira",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1203,7 +1195,7 @@
     "id": "70",
     "nome": "BAR DA BICA",
     "slug": "bar-da-bica",
-    "categoria": "Comida Caseira",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1220,7 +1212,7 @@
     "id": "71",
     "nome": "REI DE OUROS",
     "slug": "rei-de-ouros",
-    "categoria": "Comida Caseira",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1237,7 +1229,7 @@
     "id": "72",
     "nome": "MARMITARIA DO GAÚCHO",
     "slug": "marmitaria-do-gaucho",
-    "categoria": "Comida Caseira",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1254,7 +1246,7 @@
     "id": "73",
     "nome": "PRAIANO",
     "slug": "praiano-restaurante",
-    "categoria": "Comida",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1271,7 +1263,7 @@
     "id": "74",
     "nome": "FRUTOS DE GOIÁS",
     "slug": "frutos-de-goias",
-    "categoria": "Comida",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1322,7 +1314,7 @@
     "id": "77",
     "nome": "PIZZARIA ALVES",
     "slug": "pizzaria-alves",
-    "categoria": "Pizzaria e Esfiharia",
+    "categoria": "Pizzaria",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1373,7 +1365,7 @@
     "id": "80",
     "nome": "GEEK BURGUER",
     "slug": "geek-burguer",
-    "categoria": "Lanches",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1390,7 +1382,7 @@
     "id": "81",
     "nome": "NIKA BURGUER BBQ",
     "slug": "nika-burguer-bbq",
-    "categoria": "Lanches e Porções",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1410,7 +1402,7 @@
     "id": "82",
     "nome": "LCB BURGUER CESAR",
     "slug": "lcb-burguer-cesar",
-    "categoria": "Lanches",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1427,7 +1419,7 @@
     "id": "83",
     "nome": "BOLOS ROSELI",
     "slug": "bolos-roseli",
-    "categoria": "Bolos",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1444,7 +1436,7 @@
     "id": "84",
     "nome": "BOLOS SILVIA",
     "slug": "bolos-silvia",
-    "categoria": "Bolos e Salgados",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1463,7 +1455,7 @@
     "id": "85",
     "nome": "BOLOS NEUSA",
     "slug": "bolos-neusa",
-    "categoria": "Bolos e Sobremesas",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1482,7 +1474,7 @@
     "id": "86",
     "nome": "IRIS IMPERIO FORMIGUINHAS",
     "slug": "iris-imperio-formiguinhas",
-    "categoria": "Bolos para Festas",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1499,7 +1491,7 @@
     "id": "87",
     "nome": "LUCIANA SOUZA",
     "slug": "luciana-souza-bolos",
-    "categoria": "Bolos",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1516,7 +1508,7 @@
     "id": "88",
     "nome": "NILCE SALGADOS",
     "slug": "nilce-salgados",
-    "categoria": "Salgados",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1533,7 +1525,7 @@
     "id": "89",
     "nome": "MEU SALGADO FAVORITO",
     "slug": "meu-salgado-favorito-cleide",
-    "categoria": "Salgados",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1550,7 +1542,7 @@
     "id": "90",
     "nome": "PAULA MÍTICO",
     "slug": "paula-mitico-salgados-doces",
-    "categoria": "Salgados e Doces",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1567,7 +1559,7 @@
     "id": "91",
     "nome": "GUSTAVO MAQUI",
     "slug": "gustavo-maqui-defumados",
-    "categoria": "Defumados",
+    "categoria": "Açougue",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1584,7 +1576,7 @@
     "id": "92",
     "nome": "MONISE MORAES",
     "slug": "monise-moraes-trufas",
-    "categoria": "Doces",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1603,7 +1595,7 @@
     "id": "93",
     "nome": "CÉLIA",
     "slug": "celia-pao-de-mel",
-    "categoria": "Doces",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1620,7 +1612,7 @@
     "id": "94",
     "nome": "DOCES DA ANA",
     "slug": "doces-da-ana",
-    "categoria": "Doces",
+    "categoria": "Doces e Salgados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1639,7 +1631,7 @@
     "id": "95",
     "nome": "BY FIT AYRTON",
     "slug": "by-fit-ayrton",
-    "categoria": "Produtos Naturais",
+    "categoria": "Mercados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1658,7 +1650,7 @@
     "id": "96",
     "nome": "MARISTELA",
     "slug": "padaria-maristela",
-    "categoria": "Padaria",
+    "categoria": "Mercados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1675,7 +1667,7 @@
     "id": "97",
     "nome": "MIRANTE",
     "slug": "padaria-mirante",
-    "categoria": "Padaria",
+    "categoria": "Mercados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1692,7 +1684,7 @@
     "id": "98",
     "nome": "KAZCUBO",
     "slug": "mercado-kazcubo",
-    "categoria": "Mercado",
+    "categoria": "Mercados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1709,7 +1701,7 @@
     "id": "99",
     "nome": "IZZO CARNES",
     "slug": "izzo-carnes",
-    "categoria": "Carnes",
+    "categoria": "Açougue",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1726,7 +1718,7 @@
     "id": "100",
     "nome": "HORTA LEVE HORTALIÇAS",
     "slug": "horta-leve-hortalicas",
-    "categoria": "Hortaliças",
+    "categoria": "Hortifruti",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1743,7 +1735,7 @@
     "id": "101",
     "nome": "HORTA ORGÂNICA",
     "slug": "horta-organica",
-    "categoria": "Frutas e Legumes",
+    "categoria": "Hortifruti",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1760,7 +1752,7 @@
     "id": "102",
     "nome": "FRUTAS VERDURAS GILMAR",
     "slug": "frutas-verduras-gilmar",
-    "categoria": "Frutas e Verduras",
+    "categoria": "Hortifruti",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1777,7 +1769,7 @@
     "id": "103",
     "nome": "TAKAMORES",
     "slug": "takamores",
-    "categoria": "Verduras e Peixes",
+    "categoria": "Hortifruti",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1794,7 +1786,7 @@
     "id": "104",
     "nome": "MEL CAMARGO",
     "slug": "mel-camargo",
-    "categoria": "Mel e Própolis",
+    "categoria": "Mercados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1813,7 +1805,7 @@
     "id": "105",
     "nome": "BELLA DONA PASTERIA",
     "slug": "bella-dona-pasteria",
-    "categoria": "Massas e Molhos",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1832,7 +1824,7 @@
     "id": "106",
     "nome": "MASSAS TIA RÊ - Renata",
     "slug": "massas-tia-re-renata",
-    "categoria": "Massas",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1885,7 +1877,7 @@
     "id": "109",
     "nome": "M&M",
     "slug": "mm-frios-laticinios",
-    "categoria": "Frios e Laticínios",
+    "categoria": "Mercados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1902,7 +1894,7 @@
     "id": "110",
     "nome": "ÂNGELA GELÉIAS",
     "slug": "angela-geleias",
-    "categoria": "Geléias e Antepastos",
+    "categoria": "Mercados",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1919,7 +1911,7 @@
     "id": "111",
     "nome": "AÇAÍ DO PARDAL",
     "slug": "acai-do-pardal",
-    "categoria": "Açaí",
+    "categoria": "Restaurantes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1936,7 +1928,7 @@
     "id": "112",
     "nome": "ADEGA CAÇULA",
     "slug": "adega-cacula",
-    "categoria": "Bebidas",
+    "categoria": "Bares",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1953,7 +1945,7 @@
     "id": "113",
     "nome": "ADEGA DO BIGODE",
     "slug": "adega-do-bigode",
-    "categoria": "Bebidas",
+    "categoria": "Bares",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1970,7 +1962,7 @@
     "id": "114",
     "nome": "ADEGA FACTORY",
     "slug": "adega-factory",
-    "categoria": "Bebidas",
+    "categoria": "Bares",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -1988,7 +1980,7 @@
     "id": "115",
     "nome": "ARMANDO ROCHA",
     "slug": "armando-rocha-corretor-seguros",
-    "categoria": "Corretor de Seguros",
+    "categoria": "Serviços Financeiros",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2009,7 +2001,7 @@
     "id": "116",
     "nome": "ANDRÉIA MAURA MOURA",
     "slug": "andreia-maura-moura-arquiteta",
-    "categoria": "Arquiteta",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2029,7 +2021,7 @@
     "id": "117",
     "nome": "ANDRÉA DE ALMEIDA BOLLÓ",
     "slug": "andrea-de-almeida-bollo-biologa",
-    "categoria": "Bióloga",
+    "categoria": "Serviços Técnicos",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2097,7 +2089,7 @@
     "id": "121",
     "nome": "CHAVEIRO VANDI",
     "slug": "chaveiro-vandi",
-    "categoria": "Chaveiro",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2114,7 +2106,7 @@
     "id": "122",
     "nome": "CHAVEIRO FRANKLIN",
     "slug": "chaveiro-franklin",
-    "categoria": "Chaveiro",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2131,7 +2123,7 @@
     "id": "123",
     "nome": "CAÇULA DESPACHANTE",
     "slug": "cacula-despachante",
-    "categoria": "Despachante",
+    "categoria": "Serviços Veiculares",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2148,7 +2140,7 @@
     "id": "124",
     "nome": "LARISSA MARIA",
     "slug": "larissa-maria-design-interiores",
-    "categoria": "Design de Interiores",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2165,7 +2157,7 @@
     "id": "125",
     "nome": "VÍTOR MOURA ROCHA",
     "slug": "vitor-moura-rocha-professor-ingles",
-    "categoria": "Professor de Inglês",
+    "categoria": "Aulas",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2184,7 +2176,7 @@
     "id": "126",
     "nome": "ALBERT",
     "slug": "albert-professor-ingles",
-    "categoria": "Professor de Inglês",
+    "categoria": "Aulas",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2201,7 +2193,7 @@
     "id": "127",
     "nome": "BRECHÓ STRELITZIA",
     "slug": "brecho-strelitzia",
-    "categoria": "Brechó",
+    "categoria": "Moda e Vestuário",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2275,7 +2267,7 @@
     "id": "131",
     "nome": "MIRO ANTENISTA",
     "slug": "miro-antenista",
-    "categoria": "Técnico Antenista",
+    "categoria": "Assistência Técnica",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2292,7 +2284,7 @@
     "id": "132",
     "nome": "CLAUDIO AZBO",
     "slug": "claudio-azbo-antenista",
-    "categoria": "Técnico Antenista",
+    "categoria": "Assistência Técnica",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2329,7 +2321,7 @@
     "id": "134",
     "nome": "JAIME TAPECEIRO",
     "slug": "jaime-tapeceiro",
-    "categoria": "Tapeçaria",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2346,7 +2338,7 @@
     "id": "135",
     "nome": "TODO APOIO APLICATIVOS",
     "slug": "todo-apoio-aplicativos-renata",
-    "categoria": "Desenvolvimento",
+    "categoria": "Informática",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2363,7 +2355,7 @@
     "id": "136",
     "nome": "LURI LAVANDERIA",
     "slug": "luri-lavanderia",
-    "categoria": "Lavanderia",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2380,7 +2372,7 @@
     "id": "137",
     "nome": "LAVA RÁPIDO LEVA E TRÁS",
     "slug": "lava-rapido-leva-tras",
-    "categoria": "Lava Rápido",
+    "categoria": "Serviços Veiculares",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2516,7 +2508,7 @@
     "id": "145",
     "nome": "ALBERTO",
     "slug": "alberto-luthier",
-    "categoria": "Luthier",
+    "categoria": "Aulas",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2534,7 +2526,7 @@
     "id": "146",
     "nome": "GUINCHO MARCOS",
     "slug": "guincho-marcos",
-    "categoria": "Guincho",
+    "categoria": "Serviços Veiculares",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2551,7 +2543,7 @@
     "id": "147",
     "nome": "GUINCHO JP",
     "slug": "guincho-jp",
-    "categoria": "Guincho",
+    "categoria": "Serviços Veiculares",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2568,7 +2560,7 @@
     "id": "148",
     "nome": "FAC DRONE",
     "slug": "fac-drone",
-    "categoria": "Drone",
+    "categoria": "Fotografia e Filmagem",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2585,7 +2577,7 @@
     "id": "149",
     "nome": "ALUGUEL MESAS",
     "slug": "aluguel-mesas",
-    "categoria": "Aluguel de Mesas e Cadeiras",
+    "categoria": "Festas e Eventos",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2602,7 +2594,7 @@
     "id": "150",
     "nome": "IRENE DIARISTA",
     "slug": "irene-diarista",
-    "categoria": "Diarista",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2619,7 +2611,7 @@
     "id": "151",
     "nome": "GORETE DIARISTA",
     "slug": "gorete-diarista",
-    "categoria": "Diarista",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2636,7 +2628,7 @@
     "id": "152",
     "nome": "ELISABETE DIARISTA",
     "slug": "elisabete-diarista",
-    "categoria": "Diarista",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2653,7 +2645,7 @@
     "id": "153",
     "nome": "SHEILA",
     "slug": "sheila-diarista-baba",
-    "categoria": "Diarista e Babá",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2671,7 +2663,7 @@
     "id": "154",
     "nome": "NATALY DECORAÇÕES",
     "slug": "nataly-decoracoes",
-    "categoria": "Decoração de Festas",
+    "categoria": "Festas e Eventos",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2688,7 +2680,7 @@
     "id": "155",
     "nome": "MÁRIO ROGÉRIO KAYSER",
     "slug": "mario-rogerio-kayser-advogado",
-    "categoria": "Advogado",
+    "categoria": "Advocacia",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2705,7 +2697,7 @@
     "id": "156",
     "nome": "JEAN RAPHAEL PETRONE",
     "slug": "jean-raphael-petrone-advogado",
-    "categoria": "Advogado",
+    "categoria": "Advocacia",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2725,7 +2717,7 @@
     "id": "157",
     "nome": "ALESSANDRA ZANELLA",
     "slug": "alessandra-zanella-advogada",
-    "categoria": "Advogada",
+    "categoria": "Advocacia",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2742,7 +2734,7 @@
     "id": "158",
     "nome": "BARBARA LEOCÁDIO",
     "slug": "barbara-leocadio-advogada",
-    "categoria": "Advogada",
+    "categoria": "Advocacia",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2762,7 +2754,7 @@
     "id": "159",
     "nome": "VIDRACEIRO RUBEM",
     "slug": "vidraceiro-rubem",
-    "categoria": "Vidraçaria",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2781,7 +2773,7 @@
     "id": "160",
     "nome": "VIDRACEIRO AUGUSTO",
     "slug": "vidraceiro-augusto",
-    "categoria": "Vidraçaria",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2800,7 +2792,7 @@
     "id": "161",
     "nome": "VIDRACEIRO OCTACÍLIO",
     "slug": "vidraceiro-octacilio",
-    "categoria": "Vidraçaria",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2820,7 +2812,7 @@
     "id": "162",
     "nome": "SERGINHO AR",
     "slug": "serginho-ar-condicionado",
-    "categoria": "Ar Condicionado",
+    "categoria": "Assistência Técnica",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2873,7 +2865,7 @@
     "id": "165",
     "nome": "LEANDRO MONTADOR",
     "slug": "leandro-montador",
-    "categoria": "Montador de Móveis",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2890,7 +2882,7 @@
     "id": "166",
     "nome": "DRYWALL THIAGO",
     "slug": "drywall-thiago",
-    "categoria": "Gesso e Drywall",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2907,7 +2899,7 @@
     "id": "167",
     "nome": "ENICÁCIO",
     "slug": "enicacio-porcelanato",
-    "categoria": "Porcelanato Líquido",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2924,7 +2916,7 @@
     "id": "168",
     "nome": "FERNANDO TELHADISTA",
     "slug": "fernando-telhadista",
-    "categoria": "Telhadista",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2942,7 +2934,7 @@
     "id": "169",
     "nome": "CAÇAMBA MARLENE",
     "slug": "cacamba-marlene",
-    "categoria": "Caçamba",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2959,7 +2951,7 @@
     "id": "170",
     "nome": "CAÇAMBA TUTI",
     "slug": "cacamba-tuti",
-    "categoria": "Caçamba",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2976,7 +2968,7 @@
     "id": "171",
     "nome": "GERSON GRAFIATO",
     "slug": "gerson-grafiato",
-    "categoria": "Pintura e Grafiato",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2993,7 +2985,7 @@
     "id": "172",
     "nome": "ROZENDO MIGUEL",
     "slug": "rozendo-miguel-pintura-reforma",
-    "categoria": "Pintura e Reforma",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3010,7 +3002,7 @@
     "id": "173",
     "nome": "SERRALHEIRO GUTO",
     "slug": "serralheiro-guto",
-    "categoria": "Serralheria",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3027,7 +3019,7 @@
     "id": "174",
     "nome": "SERRALHERIA ELOI",
     "slug": "serralheria-eloi",
-    "categoria": "Serralheria",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3044,7 +3036,7 @@
     "id": "175",
     "nome": "SERRALHEIRO LEO",
     "slug": "serralheiro-leo",
-    "categoria": "Serralheria",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3061,7 +3053,7 @@
     "id": "176",
     "nome": "SERRALHERIA IGJ",
     "slug": "serralheria-igj",
-    "categoria": "Serralheria",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3078,7 +3070,7 @@
     "id": "177",
     "nome": "LUIZ CARLOS (CANARINHO)",
     "slug": "luiz-carlos-canarinho-serralheiro",
-    "categoria": "Serralheria",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3095,7 +3087,7 @@
     "id": "178",
     "nome": "GRANDE GRAZI",
     "slug": "grande-grazi-calhas",
-    "categoria": "Calhas",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3112,7 +3104,7 @@
     "id": "179",
     "nome": "FRAN PRAG",
     "slug": "fran-prag-dedetizadora",
-    "categoria": "Dedetizadora",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3129,7 +3121,7 @@
     "id": "180",
     "nome": "RICARDO DETETIZAÇÃO",
     "slug": "ricardo-detetizacao",
-    "categoria": "Dedetizadora",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3147,7 +3139,7 @@
     "id": "181",
     "nome": "CASA DO CONSTRUTOR",
     "slug": "casa-do-construtor",
-    "categoria": "Locação de Máquinas",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3164,7 +3156,7 @@
     "id": "182",
     "nome": "ORLANDO",
     "slug": "orlando-marido-de-aluguel",
-    "categoria": "Marido de Aluguel",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3181,7 +3173,7 @@
     "id": "183",
     "nome": "CÍCERO PRESTAÇÃO",
     "slug": "cicero-prestacao-fossas",
-    "categoria": "Limpa Fossa",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3198,7 +3190,7 @@
     "id": "184",
     "nome": "LIMPA FOSSA LUCIO",
     "slug": "limpa-fossa-lucio",
-    "categoria": "Limpa Fossa",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3215,7 +3207,7 @@
     "id": "185",
     "nome": "ALEX TOLDOS",
     "slug": "alex-toldos",
-    "categoria": "Toldos e Coberturas",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3234,7 +3226,7 @@
     "id": "186",
     "nome": "DUMAQ CONSERTOS",
     "slug": "dumaq-consertos",
-    "categoria": "Conserto de Máquinas",
+    "categoria": "Assistência Técnica",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3252,7 +3244,7 @@
     "id": "187",
     "nome": "LEANDRO FERRAMENTAS",
     "slug": "leandro-ferramentas",
-    "categoria": "Conserto de Máquinas",
+    "categoria": "Assistência Técnica",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3270,7 +3262,7 @@
     "id": "188",
     "nome": "FEITOSA CONSERTO",
     "slug": "feitosa-conserto-bombas",
-    "categoria": "Conserto de Bombas",
+    "categoria": "Assistência Técnica",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3287,7 +3279,7 @@
     "id": "189",
     "nome": "ACQUA SERVICE - Antonio",
     "slug": "acqua-service-antonio",
-    "categoria": "Análise de Água",
+    "categoria": "Serviços Técnicos",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3304,7 +3296,7 @@
     "id": "190",
     "nome": "TIÃO POCEIRO",
     "slug": "tiao-poceiro",
-    "categoria": "Poços e Bombas",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3322,7 +3314,7 @@
     "id": "191",
     "nome": "BIG CLEAN LIMPEZA",
     "slug": "big-clean-limpeza",
-    "categoria": "Lavagem de Estofados",
+    "categoria": "Serviços Gerais",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3339,7 +3331,7 @@
     "id": "192",
     "nome": "GABI FLORES E PLANTAS",
     "slug": "gabi-flores-plantas",
-    "categoria": "Flores e Plantas",
+    "categoria": "Jardinagem",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3356,7 +3348,7 @@
     "id": "193",
     "nome": "NOVACASANOVA",
     "slug": "deposito-novacasanova",
-    "categoria": "Material de Construção",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3373,7 +3365,7 @@
     "id": "194",
     "nome": "BELLA CASA",
     "slug": "deposito-bella-casa",
-    "categoria": "Material de Construção",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3390,7 +3382,7 @@
     "id": "195",
     "nome": "SÉRGIO AREIA E PEDRA",
     "slug": "sergio-areia-pedra",
-    "categoria": "Material Básico",
+    "categoria": "Construção e Reforma",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3460,7 +3452,7 @@
     "id": "199",
     "nome": "CARRETO THIAGO",
     "slug": "carreto-thiago",
-    "categoria": "Carreto",
+    "categoria": "Fretes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3477,7 +3469,7 @@
     "id": "200",
     "nome": "SR. SOUZA",
     "slug": "sr-souza-carreto",
-    "categoria": "Carreto e Frete",
+    "categoria": "Fretes",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3494,7 +3486,7 @@
     "id": "201",
     "nome": "NELSON RP",
     "slug": "nelson-rp-carreto",
-    "categoria": "Carreto e Frete",
+    "categoria": "Fretes",
     "ativo": true,
     "destaque": false,
     "servicos": [

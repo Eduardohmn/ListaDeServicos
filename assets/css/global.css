@@ -36,6 +36,9 @@ footer {
     color: var(--secondary-color);
 }
 
+#moreCategories {
+  margin-top: 1rem; /* Ou o mesmo valor do 'gap' do seu grid */
+}
 
 /* Estilos para telas maiores (Desktop) */
 /* Adicionado para o tema escuro */

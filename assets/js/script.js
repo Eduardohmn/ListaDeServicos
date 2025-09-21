@@ -8,14 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const moreCategories = document.getElementById('moreCategories');
     const categoriesSection = document.querySelector('.categories-section'); // Seleciona a seção inteira das categorias
 
-    // --- LÓGICA PARA CATEGORIAS EXPANSÍVEIS ---
+    // --- LÓGICA CORRIGIDA PARA CATEGORIAS EXPANSÍVEIS ---
     if (toggleCategoriesBtn) {
         toggleCategoriesBtn.addEventListener('click', () => {
-            moreCategories.classList.toggle('expanded');
-            if (moreCategories.classList.contains('expanded')) {
-                toggleCategoriesBtn.innerHTML = '<i class="fa fa-minus"></i> Ver Menos';
-            } else {
+            // Alterna a classe que realmente esconde o elemento
+            moreCategories.classList.toggle('hidden-categories');
+
+            // Verifica se a classe que esconde ainda existe para definir o texto do botão
+            if (moreCategories.classList.contains('hidden-categories')) {
                 toggleCategoriesBtn.innerHTML = '<i class="fa fa-plus"></i> Ver Mais Categorias';
+            } else {
+                toggleCategoriesBtn.innerHTML = '<i class="fa fa-minus"></i> Ver Menos';
             }
         });
     }
@@ -81,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lógica de busca em tempo real
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
-        
+
         if (query === '') {
             // Se a busca for limpa, MOSTRA as categorias novamente
             categoriesSection.classList.remove('hidden');
@@ -97,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             displayProviders(providersToShow);
             return;
         }
-        
+
         // Se o usuário está digitando, ESCONDE as categorias
         categoriesSection.classList.add('hidden');
 
@@ -132,6 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const filteredProviders = allProviders.filter(provider => provider.categoria === selectedCategory);
                 providersTitle.textContent = `Profissionais de ${selectedCategory}`;
                 displayProviders(filteredProviders);
+
+                // Faz a página descer suavemente até o título da seção de prestadores
+                providersTitle.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
             searchInput.value = '';
         });
