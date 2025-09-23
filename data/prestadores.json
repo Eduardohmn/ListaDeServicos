@@ -201,37 +201,37 @@
   },
   {
     "id": "14",
-    "nome": "ANA PAULA",
-    "slug": "ana-paula-veterinaria",
-    "categoria": "Pets",
-    "ativo": true,
+    "nome": "",
+    "slug": "",
+    "categoria": "",
+    "ativo": false,
     "destaque": false,
     "servicos": [
-      "Veterinária e Vacinas"
+      ""
     ],
-    "bairro": "Parque Andreense",
-    "preco_base": "Consultar valor",
-    "whatsapp": "5511984256942",
+    "bairro": "",
+    "preco_base": "",
+    "whatsapp": "",
     "instagram": "",
     "fotos": [],
-    "descricao": "Ana Paula oferece atendimento veterinário e aplicação de vacinas."
+    "descricao": ""
   },
   {
     "id": "15",
-    "nome": "ALEXANDRE",
-    "slug": "alexandre-veterinario",
-    "categoria": "Pets",
-    "ativo": true,
+    "nome": "",
+    "slug": "",
+    "categoria": "",
+    "ativo": false,
     "destaque": false,
     "servicos": [
-      "Veterinário de Urgência"
+      ""
     ],
-    "bairro": "Parque Andreense",
-    "preco_base": "Consultar valor",
-    "whatsapp": "5511982883423",
+    "bairro": "",
+    "preco_base": "",
+    "whatsapp": "",
     "instagram": "",
     "fotos": [],
-    "descricao": "Alexandre oferece atendimento veterinário de urgência."
+    "descricao": ""
   },
   {
     "id": "16",
@@ -3526,6 +3526,7 @@
     "categoria": "Moda e Vestuário",
     "ativo": true,
     "destaque": false,
+    "horario": "07:00 às 20:00hs seg à seg ",
     "servicos": [
       "Venda de joias em Prata 925 e folheados"
     ],
