@@ -3498,5 +3498,83 @@
     "instagram": "",
     "fotos": [],
     "descricao": "Nelson RP realiza mudanças e carretos."
+  },
+  {  "id": "202",
+    "nome": "Natura e Avon",
+    "slug": "natura-e-avon",
+    "categoria": "Beleza",
+    "horario":"" ,
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Perfumes",
+      "Maquiagens",
+      "Hidratantes"
+    ],
+    "bairro": "Rua Felipe dos Santos número 68",
+    "preco_base": "A partir de R$ 14.00",
+    "whatsapp": "5511965471788",
+    "instagram": "josi.alves27",
+    "fotos": [],
+    "descricao": "Beleza e auto estima para vc e temos presentes 🎁 pronta entrega sem precisar sair do conforto do seu lar não cobramos entrega."
+  },
+  {
+    "id": "203",
+    "nome": "Sil Pratas",
+    "slug": "sil-pratas",
+    "categoria": "Moda",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Venda de joias em Prata 925 e folheados"
+    ],
+    "bairro": "Jardim clube de campo",
+    "preco_base": "A partir de R$ 60",
+    "whatsapp": "5511995773182",
+    "instagram": "sil_pratas_originais_925",
+    "fotos": [
+      "assets/images/sil_pratas/SILVIA_PARREIRA (4).jpeg",
+      "assets/images/sil_pratas/SILVIA_PARREIRA (2).jpeg",
+      "assets/images/sil_pratas/SILVIA_PARREIRA (1).jpeg",
+      "assets/images/sil_pratas/SILVIA_PARREIRA (3).jpeg"
+    ],
+    "descricao": "Vendo prata 925 e folheados."
+  },
+  {
+    "id": "204",
+    "nome": "GF Agência de Marketing",
+    "slug": "gf-agencia-de-marketing",
+    "categoria": "Serviços Técnicos",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Divulgação de Empresas",
+      "Marketing Digital"
+    ],
+    "bairro": "Condomínio Club de Campo",
+    "preco_base": "A partir de R$ 2500",
+    "whatsapp": "5511984445894",
+    "instagram": "gfcomunicacaomkt",
+    "fotos": [],
+    "descricao": "A sua agência de marketing! Atendemos qualquer ramo de atuação, somos especialistas em elevar a sua marca!"
+  },
+  {
+    "id": "205",
+    "nome": "Pizzaria Vapt Vupt II",
+    "slug": "pizzaria-vapt-vupt-ii",
+    "categoria": "Pizzaria",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pizzas",
+      "Esfihas",
+      "Pastéis"
+    ],
+    "bairro": "Vila Suissa, Ribeirão Pires",
+    "preco_base": "A partir de R$ 45,99",
+    "whatsapp": "5511999467070",
+    "instagram": "vuptii",
+    "fotos": [],
+    "descricao": "Estamos na Região desde 1997 trabalhando no ramo de Disk Pizza, com muita dedicação, respeito e amor a Massa de cada Di@. E como empreendedor nós da Pizzaria Vapt Vupt II, esperamos a cada dia superar as expectativas de nossos Clientes!"
   }
 ]
