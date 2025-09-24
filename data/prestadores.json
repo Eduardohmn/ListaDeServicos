@@ -3578,5 +3578,77 @@
     "instagram": "vuptii",
     "fotos": [],
     "descricao": "Estamos na Região desde 1997 trabalhando no ramo de Disk Pizza, com muita dedicação, respeito e amor a Massa de cada Di@. E como empreendedor nós da Pizzaria Vapt Vupt II, esperamos a cada dia superar as expectativas de nossos Clientes!"
+  },
+  {
+    "id": "206",
+    "nome": "Estética Facial, corporal e Pós operatório",
+    "slug": "estetica-facial-corporal-e-pos-operatorio",
+    "categoria": "Beleza e Cosméticos",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pós operatório com drenagem",
+      "Fototerapia",
+      "Ozônioterapia",
+      "Taping",
+      "Limpeza de pele",
+      "Tratamentos Faciais (manchas, acne, rejuvenescimento, rugas e linhas de expressão)",
+      "Tratamentos Corporais (drenagem linfática, massagem e gordura localizada)",
+      "Tratamento para imunidade com o laser sistêmico ILIB"
+    ],
+    "bairro": "Parque Andreense",
+    "preco_base": "100",
+    "whatsapp": "5511963519416",
+    "instagram": "",
+    "fotos": [
+      "assets/images/estetica_facial_corporal_e_pos_operatorio/fototerapia (2).jpg",
+      "assets/images/estetica_facial_corporal_e_pos_operatorio/fototerapia (1).jpg"
+    ],
+    "descricao": "Tratamentos estéticos. Estética Facial, corporal e Pós operatório.",
+    "horario": "Consultar"
+  },
+  {
+    "id": "207",
+    "nome": "Acupuntura e terapias integrativas",
+    "slug": "acupuntura-e-terapias-integrativas",
+    "categoria": "Saúde",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Acupuntura",
+      "Auriculoterapia",
+      "Ventosaterapia",
+      "Práticas integrativas"
+    ],
+    "bairro": "Jardim Clube de Campo",
+    "preco_base": "Consultar valor",
+    "whatsapp": "5511991377002",
+    "instagram": "marcella.naturologia",
+    "fotos": [
+      "assets/images/acupuntura_e_terapias_integrativas/acupuntura_e_terapias.png"
+    ],
+    "descricao": "Atendimentos personalizados com foco no equilíbrio físico, mental e emocional. Trabalho com acupuntura, auriculoterapia, ventosaterapia e outras práticas integrativas, que auxiliam em casos de dor, ansiedade, estresse, insônia, questões emocionais e no fortalecimento da saúde como um todo.",
+    "horario": "08h às 20h"
+  },
+  {
+    "id": "208",
+    "nome": "Fisioterapia Domiciliar/Pilates Studio",
+    "slug": "fisioterapia-domiciliar-pilates-studio",
+    "categoria": "Saúde",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Fisioterapia Domiciliar",
+      "Reabilitação Ortopédica",
+      "Osteopatia",
+      "Pilates Studio"
+    ],
+    "bairro": "Riacho",
+    "preco_base": "150",
+    "whatsapp": "5511999715973",
+    "instagram": "rafamontoro.fisio",
+    "fotos": [],
+    "descricao": "Fisioterapeuta Rafaela Montoro e Fisioterapeuta Lorena Gama. Nós duas temos um Studio de Pilates com aulas de Segunda a Sexta manhã/tarde/noite. Além disso oferecemos Fisioterapia Domiciliar e Reabilitação ortopédica e técnicas de Osteopatia. Atendimento feito mediante a agendamento.",
+    "horario": "07:00 às 20:30 (Segunda a Sexta)"
   }
 ]
