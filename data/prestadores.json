@@ -393,7 +393,7 @@
     "id": "25",
     "nome": "MANICURE ERIKA",
     "slug": "manicure-erika",
-    "categoria": "Manicure",
+    "categoria": "Manicure e Pedicure",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -410,7 +410,7 @@
     "id": "26",
     "nome": "MANICURE CAROL",
     "slug": "manicure-carol",
-    "categoria": "Manicure",
+    "categoria": "Manicure e Pedicure",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -427,7 +427,7 @@
     "id": "27",
     "nome": "MANICURE REJANE",
     "slug": "manicure-rejane",
-    "categoria": "Manicure",
+    "categoria": "Manicure e Pedicure",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -461,7 +461,7 @@
     "id": "29",
     "nome": "VILALBA PRODUTOS",
     "slug": "vilalba-produtos",
-    "categoria": "Beleza",
+    "categoria": "Beleza e Cosméticos",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -478,7 +478,7 @@
     "id": "30",
     "nome": "PRODUTOS DA ANA",
     "slug": "produtos-da-ana",
-    "categoria": "Beleza",
+    "categoria": "Beleza e Cosméticos",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -497,7 +497,7 @@
     "id": "31",
     "nome": "NILCE PRODUTOS",
     "slug": "nilce-produtos",
-    "categoria": "Beleza",
+    "categoria": "Beleza e Cosméticos",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -2293,7 +2293,7 @@
     ],
     "bairro": "Parque Andreense",
     "preco_base": "Consultar valor",
-    "whatsapp": "5511971722791",
+    "whatsapp": "551197172791",
     "instagram": "",
     "fotos": [],
     "descricao": "Claudio Azbo oferece serviços de instalação e atualização de IPTV e satélite."
@@ -3611,7 +3611,7 @@
     "id": "207",
     "nome": "Acupuntura e terapias integrativas",
     "slug": "acupuntura-e-terapias-integrativas",
-    "categoria": "Saúde",
+    "categoria": "Saúde e Bem-Estar",
     "ativo": true,
     "destaque": false,
     "servicos": [
@@ -3634,7 +3634,7 @@
     "id": "208",
     "nome": "Fisioterapia Domiciliar/Pilates Studio",
     "slug": "fisioterapia-domiciliar-pilates-studio",
-    "categoria": "Saúde",
+    "categoria": "Saúde e Bem-Estar",
     "ativo": true,
     "destaque": false,
     "servicos": [
