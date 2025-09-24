@@ -3544,9 +3544,9 @@
   },
   {
     "id": "204",
-    "nome": "GF Agência de Marketing",
-    "slug": "gf-agencia-de-marketing",
-    "categoria": "Serv. Técnicos",
+    "nome": "GF Comunicação & Marketing",
+    "slug": "gf-comunicação-&-marketing",
+    "categoria": "Serviços Técnicos",
     "ativo": true,
     "destaque": false,
     "servicos": [
