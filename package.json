@@ -1,0 +1,24 @@
+{
+  "name": "siteparqueandreense",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduardohmn/ListaDeServicos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Eduardohmn/ListaDeServicos/issues"
+  },
+  "homepage": "https://github.com/Eduardohmn/ListaDeServicos#readme",
+  "dependencies": {
+    "postgres": "^3.4.7"
+  }
+}
