@@ -1,24 +1,32 @@
-/* Estilos para o sistema de avaliação */
-.rating-css {
+<style>
+
+/* Estilos para o sistema de avaliação - VERSÃO 2 */
+#reviews-section .rating-css {
     display: inline-block;
+    direction: rtl;
+    /* CHAVE DA CORREÇÃO: Inverte a direção do container */
 }
 
-.rating-css input {
+#reviews-section .rating-css input {
     display: none;
 }
 
-.rating-css label {
+#reviews-section .rating-css label {
     font-size: 2em;
     color: #ddd;
     cursor: pointer;
+    display: inline-block;
+    direction: ltr;
+    /* CHAVE DA CORREÇÃO: Mantém as estrelas na direção normal */
 }
 
-.rating-css label:hover,
-.rating-css label:hover~label,
-.rating-css input:checked~label {
+#reviews-section .rating-css label:hover,
+#reviews-section .rating-css label:hover~label,
+#reviews-section .rating-css input:checked~label {
     color: gold;
 }
 
+/* --- Estilos de suporte (mantidos para garantir que tudo funcione) --- */
 #review-form textarea {
     width: 100%;
     padding: 10px;
