@@ -9,13 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoriesSection = document.querySelector('.categories-section'); // Seleciona a seção inteira das categorias
 
     // --- LÓGICA CORRIGIDA PARA CATEGORIAS EXPANSÍVEIS ---
-    if (toggleCategoriesBtn) {
-        toggleCategoriesBtn.addEventListener('click', () => {
-            // Alterna a classe que realmente esconde o elemento
-            moreCategories.classList.toggle('hidden-categories');
+    if (toggleCategoriesBtn && moreCategories) {
+        // Garante que o estado inicial esteja correto usando a classe 'hidden'
+        if (moreCategories.classList.contains('hidden-categories')) {
+            moreCategories.classList.remove('hidden-categories');
+            moreCategories.classList.add('hidden');
+        }
 
-            // Verifica se a classe que esconde ainda existe para definir o texto do botão
-            if (moreCategories.classList.contains('hidden-categories')) {
+        toggleCategoriesBtn.addEventListener('click', () => {
+            // Alterna a classe 'hidden' para mostrar ou esconder as categorias
+            moreCategories.classList.toggle('hidden');
+
+            // Atualiza o texto do botão com base na visibilidade das categorias
+            if (moreCategories.classList.contains('hidden')) {
                 toggleCategoriesBtn.innerHTML = '<i class="fa fa-plus"></i> Ver Mais Categorias';
             } else {
                 toggleCategoriesBtn.innerHTML = '<i class="fa fa-minus"></i> Ver Menos';

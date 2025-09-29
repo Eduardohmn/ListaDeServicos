@@ -12,10 +12,29 @@
     text-align: center;
 }
 
+/* NOVO: Adicionado para controlar o layout do cabeçalho */
+.header-content {
+    display: flex;
+    flex-direction: column; /* Coloca o ícone em cima do título no mobile */
+    align-items: center;
+    justify-content: center;
+}
+
+/* NOVO: Estilo para o ícone da conta */
+.account-icon {
+    order: -1; /* Move o ícone para antes do título */
+    font-size: 2em; /* Aumenta um pouco o ícone */
+    color: var(--primary-color);
+    margin-bottom: 15px; /* Espaçamento entre o ícone e o título */
+    text-decoration: none;
+}
+
+
 .header h1 {
     font-size: 1.8em;
     color: var(--primary-color);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .header p {
@@ -184,18 +203,38 @@
 }
 
 /* --- Estilos para telas maiores (Desktop) --- */
+
+
 @media (min-width: 769px) {
     .header {
         padding: 40px 20px;
         margin-bottom: 20px;
     }
 
+    /* ALTERADO: Modificado para o layout do desktop */
+    .header-content {
+        flex-direction: row; /* Ícone e título lado a lado */
+        justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+        align-items: center; /* Alinha verticalmente */
+        position: relative; /* Adicionado para o posicionamento do ícone */
+    }
+
+    /* ALTERADO: Ajustes do ícone para desktop */
+    .account-icon {
+        position: absolute; /* Posicionamento absoluto em relação ao pai */
+        right: 20px; /* Alinha o ícone à direita */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    
     .header h1 {
         font-size: 2.5em;
+        margin-bottom: 0; /* Remove a margem para alinhar com o ícone */
     }
 
     .header p {
         font-size: 1.2em;
+        text-align: center; /* Centraliza o subtítulo mesmo no desktop */
     }
 
     .search-container {
@@ -337,23 +376,128 @@
 
 /* --- Estilos para telas maiores (Desktop) --- */
 @media (min-width: 769px) {
+    .header {
+        padding: 40px 20px;
+        margin-bottom: 20px;
+    }
 
-    /* No desktop, as categorias usam flexbox, então ajustamos aqui também */
-    .hidden-categories {
-        display: none; /* Mantém escondido por padrão */
+    .header-content {
+        flex-direction: row; /* Ícone e título lado a lado */
+        justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+        align-items: center; /* Alinha verticalmente */
+    }
+
+    .account-icon {
+        order: 0; /* Ordem padrão */
+        margin-bottom: 0;
+        margin-left: 20px; /* Adiciona espaço entre o título e o ícone */
+    }
+    
+    .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 0; /* Remove a margem para alinhar com o ícone */
+        text-align: center;
+    }
+
+    .header p {
+        font-size: 1.2em;
+        text-align: center; /* Centraliza o subtítulo mesmo no desktop */
+    }
+
+    .search-container {
+        width: 80%;
+        max-width: 600px;
+        margin-top: 20px;
+    }
+
+    .search-container input {
+        font-size: 1em;
+    }
+
+    .categories-section,
+    .providers-section,
+    .register-section {
+        padding: 30px;
+    }
+
+    .register-section h2 {
+        font-size: initial; /* Reseta para o padrão do h2 */
+    }
+
+    .categories-grid {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
-    
-    .hidden-categories.expanded {
-        display: flex; /* Muda para flex quando expandido, igual ao grid principal */
+
+    .category-item {
+        flex: 1 1 120px;
+        padding: 15px 20px;
+        transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .category-item:hover {
+        transform: translateY(-5px);
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    .category-item i {
+        font-size: 1.8em;
+        margin-bottom: 8px;
+    }
+
+    .providers-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
     }
     
-    /* Efeito de hover para o botão no desktop */
+    .provider-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .provider-card h3 {
+        font-size: 1.5em;
+    }
+
+    .provider-card p {
+        font-size: 1em; /* Tamanho normal */
+    }
+
+    .provider-card .services-list li {
+        font-size: 0.9em;
+    }
+    
+    .provider-card .contact-links {
+        flex-direction: row; /* Botões lado a lado no desktop */
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .provider-card .contact-links a {
+        padding: 8px 15px;
+    }
+
+    .provider-card .contact-links .btn-whatsapp:hover {
+        background-color: #218838;
+    }
+
+    .provider-card .contact-links .btn-profile:hover {
+        background-color: #0056b3;
+    }
+
+    .register-section p {
+        font-size: 1.1em;
+    }
+    
+    .btn-whatsapp:hover {
+        background-color: #218838;
+    }
+
     .btn-toggle:hover {
-        background-color: #0056b3; /* Cor mais escura, igual ao .btn-profile:hover */
-        transform: translateY(-3px);
+        background-color: #0056b3;
+        transform: translateY(-2px);
     }
 }
 

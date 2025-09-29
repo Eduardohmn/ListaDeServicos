@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -19,6 +18,21 @@
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/provider.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <style>
+    /* Estilos para o sistema de avaliação */
+    .rating-css { display: inline-block; }
+    .rating-css input { display: none; }
+    .rating-css label { font-size: 2em; color: #ddd; cursor: pointer; }
+    .rating-css label:hover, .rating-css label:hover ~ label, .rating-css input:checked ~ label { color: gold; }
+    #review-form textarea { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid var(--border-color); background-color: var(--bg-color); color: var(--text-color); margin-top: 10px; }
+    #review-form button { margin-top: 10px; }
+    .review { border-top: 1px solid var(--border-color); padding-top: 15px; margin-top: 15px; }
+    .review-author { font-weight: bold; }
+    .review-stars { color: gold; }
+  </style>
 </head>
 
 <body>
@@ -41,7 +55,7 @@
       const slug = params.get('slug');
       const content = $("#content");
 
-      async function load() {
+      async function loadProvider() {
         try {
           const res = await fetch('data/prestadores.json');
           const list = await res.json();
@@ -52,7 +66,7 @@
             return;
           }
 
-          // ATUALIZA AS METATAGS NO <HEAD>
+          // Atualiza as metatags
           document.getElementById('pageTitle').textContent = `${p.nome} - ${p.categoria} em Parque Andreense`;
           document.getElementById('pageDescription').setAttribute('content', `Veja o perfil de ${p.nome}, especialista em ${p.categoria}. Contato via WhatsApp e serviços oferecidos na região do Parque Andreense.`);
           document.getElementById('ogTitle').setAttribute('content', `${p.nome} - ${p.categoria}`);
@@ -64,70 +78,155 @@
               document.getElementById('ogImage').setAttribute('content', imageUrl);
           }
           
-          // CRIA O CONTEÚDO HTML DA PÁGINA
+          // Cria o conteúdo HTML da página
           const tel = (p.whatsapp || '').replace(/\D/g, '');
           const wa = tel ? `https://wa.me/${tel}?text=Ol%C3%A1%2C+vi+seu+perfil+no+Guia+Parque+Andreense+e+gostaria+de+um+or%C3%A7amento.` : "#";
 
           const servicesHtml = p.servicos ? `
-        <section>
-          <h3>Serviços Oferecidos</h3>
-          <ul>${p.servicos.map(s => `<li>${s}</li>`).join('')}</ul>
-        </section>
-      ` : '';
-
+            <section><h3>Serviços Oferecidos</h3><ul>${p.servicos.map(s => `<li>${s}</li>`).join('')}</ul></section>` : '';
           const photosHtml = p.fotos && p.fotos.length > 0 ? `
-        <section>
-          <h3>Galeria</h3>
-          <div class="gallery">
-            ${p.fotos.map(foto => `<img src="${foto}" alt="Foto de serviço de ${p.nome}">`).join('')}
-          </div>
-        </section>
-      ` : '';
+            <section><h3>Galeria</h3><div class="gallery">${p.fotos.map(foto => `<img src="${foto}" alt="Foto de serviço de ${p.nome}">`).join('')}</div></section>` : '';
 
           content.innerHTML = `
-        <article class="card profile-card">
-          ${p.destaque ? '<span class="badge">Destaque</span>' : ''}
-          <div class="profile-header">
-            <h1>${p.nome}</h1>
-            <div class="muted">${p.categoria || ''} · ${p.bairro || ''}</div>
-          </div>
-          <p class="profile-description">${p.descricao || 'Nenhuma descrição fornecida.'}</p>
-          
-          <div class="contact-info">
-            <a class="cta" href="${wa}" target="_blank" rel="nofollow noopener">
-              <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
-            </a>
-            ${p.instagram ? `<a class="cta secondary-cta" href="https://instagram.com/${p.instagram}" target="_blank" rel="nofollow noopener">
-              <i class="fab fa-instagram"></i> Instagram
-            </a>` : ''}
-          </div>
+            <article class="card profile-card">
+              ${p.destaque ? '<span class="badge">Destaque</span>' : ''}
+              <div class="profile-header">
+                <h1>${p.nome}</h1>
+                <div class="muted">${p.categoria || ''} · ${p.bairro || ''}</div>
+              </div>
+              <p class="profile-description">${p.descricao || 'Nenhuma descrição fornecida.'}</p>
+              
+              <div class="contact-info">
+                <a class="cta" href="${wa}" target="_blank" rel="nofollow noopener"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                ${p.instagram ? `<a class="cta secondary-cta" href="https://instagram.com/${p.instagram}" target="_blank" rel="nofollow noopener"><i class="fab fa-instagram"></i> Instagram</a>` : ''}
+              </div>
+              <hr>
+              ${servicesHtml}
+              <section>
+                <h3>Informações Adicionais</h3>
+                <ul>
+                  <li><strong>Preço base:</strong> ${p.preco_base || '—'}</li>
+                  <li><strong>Horário:</strong> ${p.horario || '—'}</li>
+                </ul>
+              </section>
+              ${photosHtml}
 
-          <hr>
+              <hr>
+              <section id="reviews-section">
+                <h3>Avaliações</h3>
+                <div id="review-form-container"></div>
+                <div id="reviews-list">
+                  <p class="muted">Carregando avaliações...</p>
+                </div>
+              </section>
+            </article>
+          `;
 
-          ${servicesHtml}
+          // Depois que o HTML é inserido, carrega as avaliações e o formulário
+          loadReviews(slug);
+          setupReviewForm(slug);
 
-          <section>
-            <h3>Informações Adicionais</h3>
-            <ul>
-              <li><strong>Preço base:</strong> ${p.preco_base || '—'}</li>
-              <li><strong>Horário:</strong> ${p.horario || '—'}</li>
-            </ul>
-          </section>
-
-          ${photosHtml}
-
-        </article>
-      `;
         } catch (error) {
           console.error('Erro ao carregar dados:', error);
           content.innerHTML = '<p class="muted">Ocorreu um erro ao carregar o perfil. Tente novamente mais tarde.</p>';
         }
       }
 
-      load();
+      async function loadReviews(providerSlug) {
+        const reviewsList = $('#reviews-list');
+        try {
+          const response = await fetch(`/.netlify/functions/get-reviews?slug=${providerSlug}`);
+          const reviews = await response.json();
+          
+          if (reviews.length === 0) {
+            reviewsList.innerHTML = '<p class="muted">Este profissional ainda não tem avaliações.</p>';
+            return;
+          }
+
+          reviewsList.innerHTML = reviews.map(review => {
+            const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
+            return `
+              <div class="review">
+                <p class="review-author">${review.user_email.split('@')[0]} <span class="review-stars">${stars}</span></p>
+                <p>${review.comment || ''}</p>
+                <small class="muted">${new Date(review.created_at).toLocaleDateString('pt-BR')}</small>
+              </div>
+            `;
+          }).join('');
+        } catch (error) {
+          reviewsList.innerHTML = '<p class="muted">Não foi possível carregar as avaliações.</p>';
+        }
+      }
+
+      function setupReviewForm(providerSlug) {
+        const container = $('#review-form-container');
+        const user = netlifyIdentity.currentUser();
+
+        if (user) {
+          container.innerHTML = `
+            <h4>Deixe sua avaliação</h4>
+            <form id="review-form">
+              <div class="rating-css">
+                <input type="radio" name="rating" id="rating5" value="5" required><label for="rating5">☆</label>
+                <input type="radio" name="rating" id="rating4" value="4"><label for="rating4">☆</label>
+                <input type="radio" name="rating" id="rating3" value="3"><label for="rating3">☆</label>
+                <input type="radio" name="rating" id="rating2" value="2"><label for="rating2">☆</label>
+                <input type="radio" name="rating" id="rating1" value="1"><label for="rating1">☆</label>
+              </div>
+              <textarea name="comment" placeholder="Escreva seu comentário (opcional)..." rows="4"></textarea>
+              <button type="submit" class="cta">Enviar Avaliação</button>
+              <p id="form-message" style="margin-top: 10px;"></p>
+            </form>
+          `;
+          
+          $('#review-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const messageEl = $('#form-message');
+            messageEl.textContent = 'Enviando...';
+            
+            const data = {
+              provider_slug: providerSlug,
+              rating: form.rating.value,
+              comment: form.comment.value,
+            };
+
+            try {
+              const token = await user.jwt();
+              const response = await fetch('/.netlify/functions/add-review', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify(data),
+              });
+              
+              const result = await response.json();
+
+              if (!response.ok) {
+                throw new Error(result.error || 'Erro desconhecido');
+              }
+              
+              messageEl.textContent = 'Obrigado pela sua avaliação!';
+              messageEl.style.color = 'var(--accent-color)';
+              form.reset();
+              loadReviews(providerSlug); // Recarrega as avaliações
+
+            } catch (error) {
+              messageEl.textContent = 'Erro: ' + error.message;
+              messageEl.style.color = 'red';
+            }
+          });
+
+        } else {
+          container.innerHTML = '<p>Para avaliar, você precisa <a href="/conta.html">fazer login ou criar uma conta</a>.</p>';
+        }
+      }
+
+      loadProvider();
       document.getElementById('year').textContent = new Date().getFullYear();
     })();
   </script>
 </body>
-
 </html>

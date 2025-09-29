@@ -1,3 +1,34 @@
+/* --- Base (Mobile-First) --- */
+/* Estilos aplicados em telas pequenas primeiro para o botão .cta */
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    font-weight: bold;
+    padding: 12px 20px; /* Espaçamento interno */
+    border-radius: 25px; /* Bordas arredondadas */
+    transition: background-color 0.2s; /* Transição suave */
+    gap: 10px; /* Espaço entre o ícone (se houver) e o texto */
+    width: 100%; /* Ocupa toda a largura disponível no container */
+    background-color: var(--accent-color); /* Cor de fundo principal */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* --- Estilos para telas maiores (Desktop) --- */
+@media (min-width: 769px) {
+    .cta {
+        flex-grow: 1; /* Permite que o botão cresça para preencher o espaço */
+        width: auto;  /* A largura se ajusta ao conteúdo */
+    }
+
+    .cta:hover {
+        background-color: #218838; /* Escurece a cor ao passar o mouse */
+    }
+}
 /* --- ARQUIVO: global.css --- */
 /* Estilos que se aplicam a TODAS as páginas do site */
 
