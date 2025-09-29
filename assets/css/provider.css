@@ -1,7 +1,7 @@
-
 /* Estilos para o sistema de avaliação - VERSÃO 2 */
 #reviews-section .rating-css {
     display: inline-block;
+    direction: rtl; /* Faz as estrelas serem exibidas da direita para a esquerda */
 }
 
 #reviews-section .rating-css input {
@@ -13,8 +13,7 @@
     color: #ddd;
     cursor: pointer;
     display: inline-block;
-    direction: ltr;
-    /* CHAVE DA CORREÇÃO: Mantém as estrelas na direção normal */
+    /* A propriedade direction foi movida para o container .rating-css */
 }
 
 #reviews-section .rating-css label:hover,
