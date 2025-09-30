@@ -3650,5 +3650,73 @@
     "fotos": [],
     "descricao": "Fisioterapeuta Rafaela Montoro e Fisioterapeuta Lorena Gama. Nós duas temos um Studio de Pilates com aulas de Segunda a Sexta manhã/tarde/noite. Além disso oferecemos Fisioterapia Domiciliar e Reabilitação ortopédica e técnicas de Osteopatia. Atendimento feito mediante a agendamento.",
     "horario": "07:00 às 20:30 (Segunda a Sexta)"
+  },
+  {
+    "id": "209",
+    "nome": "Pintor",
+    "slug": "pintor",
+    "categoria": "Construção e Reforma",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Pintura em geral"
+    ],
+    "bairro": "Parque andreense",
+    "preco_base": "A combinar",
+    "whatsapp": "5511987275507",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Serviço limpo e responsabilidade",
+    "horario": "8 as 17"
+  },
+  {
+    "id": "210",
+    "nome": "RENOVA lavagem e pintura de telhados",
+    "slug": "renova-lavagem-e-pintura-de-telhados",
+    "categoria": "Construção e Reforma",
+    "ativo": true,
+    "destaque": false,
+    "servicos": [
+      "Lavagem, limpeza e pintura de telhados"
+    ],
+    "bairro": "Parque andreense",
+    "preco_base": "150",
+    "whatsapp": "5511947400117",
+    "instagram": "Renova.telhados",
+    "fotos": [
+      "assets/images/renova_lavagem_e_pintura_de_telhados/renova1 (1).jpg",
+      "assets/images/renova_lavagem_e_pintura_de_telhados/renova1 (2).jpg",
+      "assets/images/renova_lavagem_e_pintura_de_telhados/renova1 (3).jpg",
+      "assets/images/renova_lavagem_e_pintura_de_telhados/renova1 (4).jpg",
+      "assets/images/renova_lavagem_e_pintura_de_telhados/renova1 (5).jpg",
+      "assets/images/renova_lavagem_e_pintura_de_telhados/renova1 (6).jpg",
+      "assets/images/renova_lavagem_e_pintura_de_telhados/renova1 (7).jpg",
+      "assets/images/renova_lavagem_e_pintura_de_telhados/renova1 (8).jpg",
+      "assets/images/renova_lavagem_e_pintura_de_telhados/renova1 (9).jpg"
+    ],
+    "descricao": "Renova cuida da parte mais importante da sua casa, o seu telhado! Atuamos com limpeza, lavagem e pintura de telhados e calhas.",
+    "horario": "08h às 18h"
+  },
+  {
+    "id": "211",
+    "nome": "Sônia Regina Zacarias",
+    "slug": "sonia-regina-zacarias",
+    "categoria": "Saúde e Bem-Estar",
+    "ativo": true,
+    "destaque": true,
+    "servicos": [
+      "Terapias de envios energéticos com cristais",
+      "Terapias de Reike",
+      "Terapia Clínica virtual Espiritual Multidimensional",
+      "Terapias de Energy Healing",
+      "Terapias de acompanhamento familiares ( combo)"
+    ],
+    "bairro": "Parque Andreence",
+    "preco_base": "260,00 reais",
+    "whatsapp": "5511957705001",
+    "instagram": "",
+    "fotos": [],
+    "descricao": "Sou a Sônia, terapeuta a cinco anos ajudando familias.\nFaço tratamentos terapêuticos para ajudar você e sua família a ter uma vida mais leve e harmoniosa .\nAjudando no tratamento com crianças autistas .\nVenha saber mais em um bate papo , e eu te auxílio na sua necessidade.\nFAÇA UMA SESSÃO EXPERIMENTAL.",
+    "horario": "De segunda a sexta-feira das 9:hrs às 12:hrs .Parte da tarde 14:hrs às 18:hrs."
   }
 ]
