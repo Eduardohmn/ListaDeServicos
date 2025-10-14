@@ -144,6 +144,15 @@
     box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
 }
 
+/* Força faixa superior dourada em prestadores em destaque dentro do carrossel
+   Para garantir contraste com a "parte azul de cima" do card, usamos um
+   pseudo-elemento que sobrepõe uma faixa dourada no topo. */
+.providers-carousel .provider-card.destaque {
+    position: relative; /* para posicionar o ::before */
+    border-top-color: gold; /* reforça a cor do topo */
+}
+
+
 .provider-card h3 {
     font-size: 1.2em;
     margin-bottom: 5px;
@@ -200,6 +209,50 @@
     font-weight: bold;
     transition: background-color 0.2s;
     display: inline-block;
+}
+
+/* === Carrossel Mobile dos Prestadores em Destaque === */
+@media (max-width: 768px) {
+    .providers-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 12px;
+        padding: 10px;
+        scroll-behavior: smooth;
+    }
+
+    /* Esconde a barra de rolagem em WebKit (iOS/Chrome) */
+    .providers-carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Cada cartão ocupa 80% da largura do container para mostrar 1 por vez */
+    .providers-carousel .provider-card {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        background-color: var(--card-bg);
+        padding: 16px;
+        border-top: 5px solid var(--primary-color);
+    }
+}
+
+/* === Carrossel automático mobile === */
+@media (max-width: 768px) {
+    .providers-carousel {
+        display: flex;
+        overflow: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .providers-carousel .provider-card {
+        flex: 0 0 100%; /* mostra só um por vez */
+        scroll-snap-align: center;
+        transition: transform 0.5s ease;
+    }
 }
 
 /* --- Estilos para telas maiores (Desktop) --- */
@@ -509,3 +562,4 @@
     display: none !important;
 }
 /* --- FIM: Classe utilitária para esconder elementos --- */
+

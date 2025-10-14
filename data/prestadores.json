@@ -1750,20 +1750,20 @@
   },
   {
     "id": "102",
-    "nome": "FRUTAS VERDURAS GILMAR",
-    "slug": "frutas-verduras-gilmar",
-    "categoria": "Hortifruti",
-    "ativo": true,
+    "nome": "",
+    "slug": "",
+    "categoria": "",
+    "ativo": false,
     "destaque": false,
     "servicos": [
-      "Frutas, verduras e legumes"
+      ""
     ],
     "bairro": "Parque Andreense",
-    "preco_base": "Consultar valor",
-    "whatsapp": "5511996886294",
+    "preco_base": "",
+    "whatsapp": "",
     "instagram": "",
     "fotos": [],
-    "descricao": "Gilmar vende frutas, verduras e legumes."
+    "descricao": ""
   },
   {
     "id": "103",

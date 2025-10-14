@@ -44,6 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
             allProviders = data.filter(p => p.ativo);
             const featuredProviders = allProviders.filter(p => p.destaque);
             providersTitle.textContent = "Profissionais em Destaque";
+            
+            // ADICIONADO: Garante que a classe do carrossel seja aplicada no carregamento inicial
+            providersGrid.classList.add('providers-carousel');
+
             displayProviders(featuredProviders);
         } catch (error) {
             console.error('Erro ao carregar os dados dos prestadores:', error);
@@ -99,16 +103,22 @@ document.addEventListener('DOMContentLoaded', () => {
             if (selectedCategory) {
                 providersToShow = allProviders.filter(provider => provider.categoria === selectedCategory);
                 providersTitle.textContent = `Profissionais de ${selectedCategory}`;
+                // ALTERADO: Remove a classe do carrossel para a lista de categoria
+                providersGrid.classList.remove('providers-carousel');
             } else {
                 providersToShow = allProviders.filter(p => p.destaque);
                 providersTitle.textContent = "Profissionais em Destaque";
+                // ALTERADO: Adiciona a classe do carrossel de volta para a lista de destaques
+                providersGrid.classList.add('providers-carousel');
             }
             displayProviders(providersToShow);
             return;
         }
 
-        // Se o usuário está digitando, ESCONDE as categorias
+        // Se o usuário está digitando, ESCONDE as categorias e remove o carrossel
         categoriesSection.classList.add('hidden');
+        // ALTERADO: Remove a classe do carrossel para os resultados da busca
+        providersGrid.classList.remove('providers-carousel');
 
         const filteredProviders = allProviders.filter(provider => {
             const nameMatch = provider.nome.toLowerCase().includes(query);
@@ -133,6 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 selectedCategory = null;
                 providersTitle.textContent = "Profissionais em Destaque";
                 const featuredProviders = allProviders.filter(p => p.destaque);
+                // ALTERADO: Adiciona a classe do carrossel de volta para a lista de destaques
+                providersGrid.classList.add('providers-carousel');
                 displayProviders(featuredProviders);
                 e.currentTarget.blur();
             } else {
@@ -140,6 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.currentTarget.classList.add('selected');
                 const filteredProviders = allProviders.filter(provider => provider.categoria === selectedCategory);
                 providersTitle.textContent = `Profissionais de ${selectedCategory}`;
+                // ALTERADO: Remove a classe do carrossel para a lista filtrada por categoria
+                providersGrid.classList.remove('providers-carousel');
                 displayProviders(filteredProviders);
 
                 // Faz a página descer suavemente até o título da seção de prestadores
@@ -151,4 +165,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inicia o carregamento dos dados
     loadProviders();
+
+    // --- Carrossel automático no mobile ---
+    (function setupAutoSlide() {
+        const carousel = document.getElementById('providersGrid');
+        if (!carousel) return; // nada a fazer se o container não existir
+
+        let scrollIndex = 0;
+        let intervalId = null;
+        
+        // ALTERADO: A função de slide agora verifica se a classe 'providers-carousel' está presente
+        function autoSlide() {
+            if (window.innerWidth > 768 || !carousel.classList.contains('providers-carousel')) return;
+
+            const cards = carousel.querySelectorAll('.provider-card');
+            if (cards.length <= 1) return; // Não faz sentido girar se tiver 1 ou 0 cards
+
+            scrollIndex = (scrollIndex + 1) % cards.length;
+            const scrollAmount = cards[0].offsetWidth * scrollIndex;
+
+            carousel.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+        }
+
+        function start() {
+            // Só inicia se o carrossel estiver ativo e em mobile
+            if (intervalId || window.innerWidth > 768 || !carousel.classList.contains('providers-carousel')) return;
+            intervalId = setInterval(autoSlide, 3000);
+        }
+
+        function stop() {
+            if (!intervalId) return;
+            clearInterval(intervalId);
+            intervalId = null;
+        }
+
+        // Observador para reiniciar ou parar o carrossel quando a classe for alterada
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.attributeName === 'class') {
+                    const hasCarouselClass = mutation.target.classList.contains('providers-carousel');
+                    if (hasCarouselClass && window.innerWidth <= 768) {
+                        start();
+                    } else {
+                        stop();
+                    }
+                }
+            });
+        });
+
+        observer.observe(carousel, { attributes: true });
+
+        // Pausa o auto-slide quando o usuário interage
+        carousel.addEventListener('mouseenter', stop);
+        carousel.addEventListener('touchstart', stop, { passive: true });
+        carousel.addEventListener('mouseleave', start);
+        carousel.addEventListener('touchend', start, { passive: true });
+
+        // Reinicia/para ao redimensionar
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 || !carousel.classList.contains('providers-carousel')) {
+                stop();
+            } else {
+                start();
+            }
+        });
+
+        // Inicia automaticamente se estiver em mobile e com a classe correta
+        if (window.innerWidth <= 768 && carousel.classList.contains('providers-carousel')) start();
+    })();
 });
